@@ -26,15 +26,16 @@ def setupLogging(fileName):
     logger.addHandler(streamHandler)
 
 
-class tryCatchWrapped:
-    # this is for decorator class
+def tryCatchWrapped(func):
+    # this is for decorator
 
-    def __init__(self, f):
-        self.func = f
-
-    def __call__(self, *args, **kwargs):
+    def wrapperFunc(*args, **kwargs):
         try:
-            self.func(*args, **kwargs)
+            result =  func(*args, **kwargs)
+            return result
         except Exception as e:
+            print(e)
             logging.error(str(e), exc_info=True)
+            return None
 
+    return wrapperFunc

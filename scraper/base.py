@@ -78,5 +78,10 @@ class NaverFinanceCrawler(InfoCrawler):
         self.baseUrl = "https://finance.naver.com"
         self.headers = {
             'User-Agent' : '',
+            'referer': "https://finance.naver.com",
+            'Cache-Control': 'no-cache',
+            'Content-Type': 'application/x-www-form-urlencoded',
         }
         self.setRandomUserAgent()
+
+
