@@ -84,4 +84,3 @@ class NaverFinanceCrawler(InfoCrawler):
         }
         self.setRandomUserAgent()
 
-
