@@ -31,8 +31,9 @@ class KOSPISingleCrawler(NaverFinanceCrawler):
                 break
             
             time.sleep(self.breakTime)
+            self.setRandomUserAgent()
             prevInfoDictInPage = infoDictInPage
-        
+
         return totalInfoDict
 
 
@@ -40,7 +41,7 @@ class KOSPISingleCrawler(NaverFinanceCrawler):
     def parsePage(self, code, pageIdx):
         params = {"code":str(code), "page":str(pageIdx)}
         res = requests.get(self.basePriceUrl, headers=self.headers, params=params)
-        if res is None:
+        if res is None or res.ok is False:
             logging.error("Some problem in request")
             return None
         html = res.text
@@ -52,7 +53,7 @@ class KOSPISingleCrawler(NaverFinanceCrawler):
         
         dateSelector = 'span.tah'
         priceInfoSelector = 'td.num > span.tah'
-        InfoDict = {}
+        infoDict = {}
 
         # must consider when endPrice is blank b4 market is closed
         for infoSoup in infoSoupList:
@@ -69,7 +70,7 @@ class KOSPISingleCrawler(NaverFinanceCrawler):
                 highPrice = int(priceInfoList[3].text.replace(",",""))
                 lowPrice = int(priceInfoList[4].text.replace(",",""))
                 amount = int(priceInfoList[5].text.replace(",",""))
-                InfoDict[dateObj] = {"startPrice":startPrice, "endPrice":endPrice, 
+                infoDict[dateObj] = {"startPrice":startPrice, "endPrice":endPrice, 
                 "highPrice":highPrice, "lowPrice":lowPrice, "amount":amount}
         
-        return InfoDict
+        return infoDict

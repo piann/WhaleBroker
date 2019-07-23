@@ -1,6 +1,10 @@
 from abc import *
 import random
-
+from ..common import *
+import time
+import datetime
+import requests
+from bs4 import BeautifulSoup
 
 class InfoCrawler(object):
     __metaclass__ = ABCMeta
@@ -67,6 +71,86 @@ class InvestingCrawler(InfoCrawler):
 
         }
         self.setRandomUserAgent()
+
+    @tryCatchWrapped
+    def convertDateStrToDate(self, dateStr):
+        month, day, year = dateStr.split(" ")
+        monDic = {
+            "Dec": 12,
+            "Nov": 11,
+            "Oct": 10,
+            "Sep": 9,
+            "Aug": 8,
+            "Jul": 7,
+            "Jun": 6,
+            "May": 5,
+            "Apr": 4,
+            "Mar": 3,
+            "Feb": 2,
+            "Jan": 1,
+        }
+        month = int(monDic[month])
+        day = int(day.replace(",",""))
+        year = int(year)
+        dateObj = datetime.date(year, month, day)
+        return dateObj
+
+    @tryCatchWrapped
+    def parseAmount(self, amountStr):
+        if amountStr[-1] == "K":
+            amount = float(amountStr[:-1])*1000
+        elif amountStr[-1] == "M":
+            amount = float(amountStr[:-1])*1000000
+        elif amountStr[-1] == "B":
+            amount = float(amountStr[:-1])*1000000000
+        else:
+            amount = float(amountStr)
+        
+        return amount
+
+
+
+    @tryCatchWrapped
+    def getResultData(self, fromDate, toDate):
+
+        # input date format : dd/mm/yyyy
+        infoDict = {}
+        self.formData["st_date"] = fromDate
+        self.formData["end_date"] = toDate
+        res = requests.post(self.baseUrl, headers=self.headers, data=self.formData)
+        if res is None or res.ok is False:
+            logging.error("Some problem in request")
+            return None
+        html = res.text
+        soup = BeautifulSoup(html, 'html.parser')
+        rows = soup.select(
+            'tbody > tr'
+        )
+        print(rows[:-1])
+        for row in rows[:-1]:
+            infoList = row.select(
+                'td'
+            )
+            dateObj = self.convertDateStrToDate(infoList[0].text)
+            endPrice = float(infoList[1].text.replace(",",""))
+            startPrice = float(infoList[2].text.replace(",",""))
+            highPrice = float(infoList[3].text.replace(",",""))
+            lowPrice = float(infoList[4].text.replace(",",""))
+            infoDict[dateObj] = {"startPrice":startPrice, "endPrice":endPrice, 
+            "highPrice":highPrice, "lowPrice":lowPrice}
+            
+            if self.isAmountExist is True:
+                amountStr = (infoList[5].text.replace(",",""))
+                if amountStr == "-":
+                    amount = 0
+                else:
+                    amount = self.parseAmount(amountStr)
+                infoDict[dateObj]["amount"] = amount
+                 
+
+        return infoDict
+
+
 
 
 class NaverFinanceCrawler(InfoCrawler):

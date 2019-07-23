@@ -5,16 +5,14 @@ import requests
 import time
 import datetime
 
-
-
-
-class USDKRWCrawler(InvestingCrawler):
+class BrentOilCrawler(InvestingCrawler):
     
     def __init__(self):
         super().__init__()
-        self.formData = {"curr_id": 650,
-            "smlID": 106816,
-            "header": "USD/KRW Historical Data",
+        self.formData = {
+            "curr_id": 8833,
+            "smlID": 300028,
+            "header": "Brent Oil Futures Historical Data",
             "st_date": "",
             "end_date": "",
             "interval_sec": "Daily",
@@ -22,5 +20,5 @@ class USDKRWCrawler(InvestingCrawler):
             "sort_ord": "DESC",
             "action": "historical_data"
         }
-        self.isAmountExist = False
-
+        self.isAmountExist = True
+ 
