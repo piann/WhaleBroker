@@ -126,7 +126,6 @@ class InvestingCrawler(InfoCrawler):
         rows = soup.select(
             'tbody > tr'
         )
-        print(rows[:-1])
         for row in rows[:-1]:
             infoList = row.select(
                 'td'

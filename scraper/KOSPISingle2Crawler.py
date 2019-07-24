@@ -4,14 +4,14 @@ from bs4 import BeautifulSoup
 import requests
 import time
 import datetime
+import random
 
-
-class KOSPISingleCrawler(NaverFinanceCrawler):
-# date, endPrice, startPrice, highPrice, lowPrice, amount
+class KOSPISingle2Crawler(NaverFinanceCrawler):
+# foreigner, institute
 
     def __init__(self):
         super().__init__()
-        self.basePriceUrl = self.baseUrl + "/item/sise_day.nhn"
+        self.basePriceUrl = self.baseUrl + "/item/frgn.nhn"
 
     @tryCatchWrapped
     def getResultData(self, code, fromPage, toPage):
@@ -30,7 +30,7 @@ class KOSPISingleCrawler(NaverFinanceCrawler):
             # check if this page is last page
             if infoDictInPage == prevInfoDictInPage:
                 break
-
+            
             self.breakTime = random.randint(1,4)
             self.setRandomUserAgent()
             time.sleep(self.breakTime)
@@ -53,26 +53,27 @@ class KOSPISingleCrawler(NaverFinanceCrawler):
         )
         infoSoupList = [row for row in rows if str(row).find("mouseOut") >= 0]
         
+        
         dateSelector = 'span.tah'
-        priceInfoSelector = 'td.num > span.tah'
+        amountInfoSelector = 'td.num > span.tah'
         infoDict = {}
 
         # must consider when endPrice is blank b4 market is closed
         for infoSoup in infoSoupList:
             dateInfoList = infoSoup.select(dateSelector)
-            priceInfoList = infoSoup.select(priceInfoSelector)
+            amountInfoList = infoSoup.select(amountInfoSelector)
 
             if len(dateInfoList) > 0:
                 dateStr = dateInfoList[0].text
                 year, month, day = dateStr.split(".")
                 dateObj = datetime.date(int(year), int(month), int(day))
-            if len(priceInfoList) > 0:
-                endPrice = int(priceInfoList[0].text.replace(",",""))
-                startPrice = int(priceInfoList[2].text.replace(",",""))
-                highPrice = int(priceInfoList[3].text.replace(",",""))
-                lowPrice = int(priceInfoList[4].text.replace(",",""))
-                amount = int(priceInfoList[5].text.replace(",",""))
-                infoDict[dateObj] = {"startPrice":startPrice, "endPrice":endPrice, 
-                "highPrice":highPrice, "lowPrice":lowPrice, "amount":amount}
+            if len(amountInfoList) > 0:
+                instituteAmount = int(amountInfoList[4].text.replace(",",""))
+                foreignerAmount = int(amountInfoList[5].text.replace(",",""))
+                infoDict[dateObj] = {
+                "instituteAmount":instituteAmount, 
+                "foreignerAmount":foreignerAmount
+                }
         
         return infoDict
+        
