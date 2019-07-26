@@ -50,6 +50,7 @@ class InfoCrawler(object):
     def getResultData(self, inputN, rangeN):
         # this method is the goal of class
         # argument should be considered with efficiency
+        # if range input is date, date format is 'YYYY/MM/DD'
         pass
 
 
@@ -108,15 +109,20 @@ class InvestingCrawler(InfoCrawler):
         
         return amount
 
-
+    def setCustomDateFormat(self, dateStr):
+        # our input format is YYYY/MM/DD, so convert it proper considering format of investing.com
+        year, month, day = dateStr.split("/")
+        investingDateStr = "{0}/{1}/{2}".format(month, day, year)
+        return investingDateStr
 
     @tryCatchWrapped
     def getResultData(self, fromDate, toDate):
-
-        # input date format : dd/mm/yyyy
+        
+        
         infoDict = {}
-        self.formData["st_date"] = fromDate
-        self.formData["end_date"] = toDate
+        # investing.com input date format : dd/mm/yyyy
+        self.formData["st_date"] = self.setCustomDateFormat(fromDate)
+        self.formData["end_date"] = self.setCustomDateFormat(toDate)
         res = requests.post(self.baseUrl, headers=self.headers, data=self.formData)
         if res is None or res.ok is False:
             logging.error("Some problem in request")
