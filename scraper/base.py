@@ -5,6 +5,7 @@ import time
 import datetime
 import requests
 from bs4 import BeautifulSoup
+import math
 
 class InfoCrawler(object):
     __metaclass__ = ABCMeta
@@ -109,7 +110,7 @@ class InvestingCrawler(InfoCrawler):
         else:
             amount = float(amountStr)
         
-        return amount
+        return math.floor(amount)
 
     def setCustomDateFormat(self, dateStr):
         # our input format is YYYY/MM/DD, so convert it proper considering format of investing.com
