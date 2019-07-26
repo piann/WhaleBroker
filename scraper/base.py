@@ -98,7 +98,9 @@ class InvestingCrawler(InfoCrawler):
 
     @tryCatchWrapped
     def parseAmount(self, amountStr):
-        if amountStr[-1] == "K":
+        if amountStr == '-':
+            amount = 0
+        elif amountStr[-1] == "K":
             amount = float(amountStr[:-1])*1000
         elif amountStr[-1] == "M":
             amount = float(amountStr[:-1])*1000000
@@ -146,10 +148,7 @@ class InvestingCrawler(InfoCrawler):
             
             if self.isAmountExist is True:
                 amountStr = (infoList[5].text.replace(",",""))
-                if amountStr == "-":
-                    amount = 0
-                else:
-                    amount = self.parseAmount(amountStr)
+                amount = self.parseAmount(amountStr)
                 infoDict[dateObj]["amount"] = amount
                  
 
