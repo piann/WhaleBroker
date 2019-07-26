@@ -42,6 +42,10 @@ class ShortSellCrawler(InfoCrawler):
             year, month, day = dateStr.split("/")
             dateObj = datetime.date(int(year), int(month), int(day))
             transactionValue = infoDict['cvsrtsell_trdval']
+            if transactionValue == '-':
+                transactionValue = 0
+            else:
+                transactionValue = int(transactionValue.replace(",",""))
             resultDict[dateObj] = {"tValue":transactionValue}
 
 
