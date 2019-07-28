@@ -1,5 +1,5 @@
 import logging
-
+import datetime
 
 def getDataFromDB():
     pass
@@ -7,6 +7,13 @@ def getDataFromDB():
 def putDataIntoDB():
     pass
 
+def getMinDate(datetimeObjList):
+    curMinDatetimeObj = datetime.datetime.now()
+    for datetimeObj in datetimeObjList:
+        if curMinDatetimeObj > datetimeObj:
+            curMinDatetimeObj = datetimeObj
+        
+    return curMinDatetimeObj
 
 def setupLogging(fileName):
     # setup log file and log depth 
