@@ -1,5 +1,6 @@
 import logging
 import datetime
+import pymongo
 
 def getMinDate(datetimeObjList):
     curMinDatetimeObj = datetime.datetime.now()
@@ -35,12 +36,16 @@ def tryCatchWrapped(func):
             result =  func(*args, **kwargs)
             return result
         except Exception as e:
-            print(e)
             logging.error(str(e), exc_info=True)
             return None
 
     return wrapperFunc
 
+@tryCatchWrapped
+def getDBConnection(databaseName="whalebroker", ip="127.0.0.1", port=27017):
+    conn = pymongo.MongoClient(str(ip), int(port))
+    db = conn.get_database(databaseName)
+    return db
 
 # 2019/07/24
 CODE_TABLE = [
