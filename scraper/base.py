@@ -6,6 +6,8 @@ import datetime
 import requests
 from bs4 import BeautifulSoup
 import math
+import pymongo
+
 
 class InfoCrawler(object):
     __metaclass__ = ABCMeta
@@ -14,6 +16,7 @@ class InfoCrawler(object):
         self.baseUrl = ""
         self.breakTime = 3 # do crawling with break time
         self.headers = {}
+        
 
     def setRandomUserAgent(self):
         userAgentList = [
@@ -47,6 +50,16 @@ class InfoCrawler(object):
         self.headers['User-Agent'] = userAgent
         return userAgent
 
+    @tryCatchWrapped
+    def getProxyList(self):
+        return []
+
+    @tryCatchWrapped
+    def setDBConnection(self, databaseName="whalebroker", ip="127.0.0.1", port=27017):
+        conn = pymongo.MongoClient(str(ip), int(port))
+        db = conn.get_database(databaseName)
+        return db
+
     @abstractmethod
     def getResultData(self, inputN, rangeN):
         # this method is the goal of class
@@ -54,7 +67,11 @@ class InfoCrawler(object):
         # if range input is date, date format is 'YYYY/MM/DD'
         pass
 
-
+    @abstractmethod
+    def putDataToMongo(self, resultData):
+        # consider resultData format and db collection
+        # consider the case utilizing multiple collection    
+        pass
 
 class InvestingCrawler(InfoCrawler):
     # input is items of form data (ex : curr_id: 8830, smlID: 300004, header: Gold Futures Historical Data)
