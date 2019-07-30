@@ -24,10 +24,6 @@ class BaseModel(object):
     @abstractmethod
     def train(self):
         pass
-    @abstractmethod
-    def predict(self):
-        pass
-    
  
 
 class BaseLab(object):

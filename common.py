@@ -1,12 +1,6 @@
 import logging
 import datetime
 
-def getDataFromDB():
-    pass
-
-def putDataIntoDB():
-    pass
-
 def getMinDate(datetimeObjList):
     curMinDatetimeObj = datetime.datetime.now()
     for datetimeObj in datetimeObjList:
