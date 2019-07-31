@@ -33,7 +33,8 @@ class ShortSellCrawler(InfoCrawler):
         if res.ok is None or res.content == None:
             logging.error("Some problem in request")
             return None
-
+        
+        infoChunkList = []
         resultDict = {}
         dumpData = json.loads(res.content)
         infoJsonList = dumpData['block1'] 
@@ -46,12 +47,32 @@ class ShortSellCrawler(InfoCrawler):
                 transactionValue = 0
             else:
                 transactionValue = int(transactionValue.replace(",",""))
-            resultDict[dateObj] = {"tValue":transactionValue}
+            infoChunkList.append({"time":dateObj,"shortSellTValue":transactionValue})
 
+        resultDict[code] = infoChunkList
+        return resultDict
 
     @tryCatchWrapped
     def getFullCode(self,shortCode):
         for infoDict in CODE_TABLE:
             if shortCode in infoDict["shortCode"]:
                 return infoDict["fullCode"] 
-        
+    
+
+    @tryCatchWrapped
+    def putDataToMongo(self, dbConn, resultData):
+        col = dbConn.get_collection("DailyKOSPI")
+        for code, infoDictList in resultData.items():
+            for infoDict in infoDictList:
+                res = col.find_one({"_id":code,"data.time":infoDict["time"]})
+                if res is None: # if data if this date is new 
+                    res = col.update({"_id":code},{"$push":{"data":infoDict}},upsert=True)
+
+                else: # if already exist
+                    for k, v in infoDict.items():
+                        res = col.update({"_id":code,"data.time":infoDict["time"]},{"$set":{
+                                "data.$.{0}".format(k):v
+                            }
+                        })
+                        
+        return True

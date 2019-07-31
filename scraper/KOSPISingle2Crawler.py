@@ -80,6 +80,7 @@ class KOSPISingle2Crawler(NaverFinanceCrawler):
         resultDict[code] = infoDictList
         return resultDict
         
+    @tryCatchWrapped
     def putDataToMongo(self, dbConn, resultData):
         col = dbConn.get_collection("DailyKOSPI")
         for code, infoDictList in resultData.items():
