@@ -20,5 +20,7 @@ class BrentOilCrawler(InvestingCrawler):
             "sort_ord": "DESC",
             "action": "historical_data"
         }
+        self.itemName = "brentOil"
+        self.collection = "dailyFuture"
         self.isAmountExist = True
  

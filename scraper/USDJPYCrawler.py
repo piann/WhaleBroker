@@ -21,4 +21,6 @@ class USDJPYCrawler(InvestingCrawler):
             "sort_ord": "DESC",
             "action": "historical_data"
         }
+        self.itemName="USD/JPY"
+        self.collection = "dailyIndex"
         self.isAmountExist = False

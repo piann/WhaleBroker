@@ -15,4 +15,6 @@ class GoldCrawler(InvestingCrawler):
             "sort_ord": "DESC",
             "action": "historical_data"
         }
+        self.itemName="gold"
+        self.collection = "dailyFuture"
         self.isAmountExist = True

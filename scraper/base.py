@@ -16,6 +16,8 @@ class InfoCrawler(object):
         self.baseUrl = ""
         self.breakTime = 3 # do crawling with break time
         self.headers = {}
+        self.itemName = None
+        self.collection = None
         
 
     def setRandomUserAgent(self):
@@ -54,6 +56,7 @@ class InfoCrawler(object):
     def getProxyList(self):
         return []
 
+
     @abstractmethod
     def getResultData(self, inputN, rangeN):
         # this method is the goal of class
@@ -61,11 +64,30 @@ class InfoCrawler(object):
         # if range input is date, date format is 'YYYY/MM/DD'
         pass
 
-    @abstractmethod
+        
+    @tryCatchWrapped
     def putDataToMongo(self, dbConn, resultData):
         # consider resultData format and db collection
         # consider the case utilizing multiple collection    
-        pass
+
+        if self.collection is None:
+            return None
+        
+        col = dbConn.get_collection(self.collection)
+        for code, infoDictList in resultData.items():
+            for infoDict in infoDictList:
+                res = col.find_one({"_id":code,"data.time":infoDict["time"]})
+                if res is None: # if data if this date is new 
+                    res = col.update({"_id":code},{"$push":{"data":infoDict}},upsert=True)
+
+                else: # if already exist
+                    for k, v in infoDict.items():
+                        res = col.update({"_id":code,"data.time":infoDict["time"]},{"$set":{
+                                "data.$.{0}".format(k):v
+                            }
+                        })
+                        
+        return True
 
 class InvestingCrawler(InfoCrawler):
     # input is items of form data (ex : curr_id: 8830, smlID: 300004, header: Gold Futures Historical Data)
@@ -132,8 +154,8 @@ class InvestingCrawler(InfoCrawler):
     @tryCatchWrapped
     def getResultData(self, fromDate, toDate):
         
-        
-        infoDict = {}
+        resultDict = {}
+        infoDictList = []
         # investing.com input date format : dd/mm/yyyy
         self.formData["st_date"] = self.setCustomDateFormat(fromDate)
         self.formData["end_date"] = self.setCustomDateFormat(toDate)
@@ -150,21 +172,27 @@ class InvestingCrawler(InfoCrawler):
             infoList = row.select(
                 'td'
             )
+
+            infoDict = {}
             dateObj = self.convertDateStrToDate(infoList[0].text)
             endPrice = float(infoList[1].text.replace(",",""))
             startPrice = float(infoList[2].text.replace(",",""))
             highPrice = float(infoList[3].text.replace(",",""))
             lowPrice = float(infoList[4].text.replace(",",""))
-            infoDict[dateObj] = {"startPrice":startPrice, "endPrice":endPrice, 
+            infoDict = {"time":dateObj, "startPrice":startPrice, "endPrice":endPrice, 
             "highPrice":highPrice, "lowPrice":lowPrice}
             
             if self.isAmountExist is True:
                 amountStr = (infoList[5].text.replace(",",""))
                 amount = self.parseAmount(amountStr)
                 infoDict[dateObj]["amount"] = amount
-                 
+            
+            infoDictList.append(infoDict)
 
-        return infoDict
+
+        resultDict[self.itemName] = infoDictList
+        return resultDict
+
 
 
 

@@ -12,6 +12,7 @@ class KOSPISingleCrawler(NaverFinanceCrawler):
     def __init__(self):
         super().__init__()
         self.basePriceUrl = self.baseUrl + "/item/sise_day.nhn"
+        self.collection = "DailyKOSPI"
 
     @tryCatchWrapped
     def getResultData(self, code, fromPage, toPage):
@@ -79,25 +80,5 @@ class KOSPISingleCrawler(NaverFinanceCrawler):
         
         resultDict[code] = infoDictList
         return resultDict
-
-    @tryCatchWrapped
-    def putDataToMongo(self, dbConn, resultData):
-        col = dbConn.get_collection("DailyKOSPI")
-        for code, infoDictList in resultData.items():
-            for infoDict in infoDictList:
-                res = col.find_one({"_id":code,"data.time":infoDict["time"]})
-                if res is None: # if data if this date is new 
-                    res = col.update({"_id":code},{"$push":{"data":infoDict}},upsert=True)
-
-                else: # if already exist
-                    for k, v in infoDict.items():
-                        res = col.update({"_id":code,"data.time":infoDict["time"]},{"$set":{
-                                "data.$.{0}".format(k):v
-                            }
-                        })
-                        
-        return True
-
-                        
 
 
