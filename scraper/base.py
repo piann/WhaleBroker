@@ -54,12 +54,6 @@ class InfoCrawler(object):
     def getProxyList(self):
         return []
 
-    @tryCatchWrapped
-    def setDBConnection(self, databaseName="whalebroker", ip="127.0.0.1", port=27017):
-        conn = pymongo.MongoClient(str(ip), int(port))
-        db = conn.get_database(databaseName)
-        return db
-
     @abstractmethod
     def getResultData(self, inputN, rangeN):
         # this method is the goal of class
@@ -68,7 +62,7 @@ class InfoCrawler(object):
         pass
 
     @abstractmethod
-    def putDataToMongo(self, resultData):
+    def putDataToMongo(self, db, resultData):
         # consider resultData format and db collection
         # consider the case utilizing multiple collection    
         pass
@@ -111,7 +105,7 @@ class InvestingCrawler(InfoCrawler):
         month = int(monDic[month])
         day = int(day.replace(",",""))
         year = int(year)
-        dateObj = datetime.date(year, month, day)
+        dateObj = datetime.datetime(year, month, day)
         return dateObj
 
     @tryCatchWrapped

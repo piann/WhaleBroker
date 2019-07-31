@@ -40,7 +40,7 @@ class ShortSellCrawler(InfoCrawler):
         for infoDict in infoJsonList:
             dateStr = infoDict['trd_dd']
             year, month, day = dateStr.split("/")
-            dateObj = datetime.date(int(year), int(month), int(day))
+            dateObj = datetime.datetime(int(year), int(month), int(day))
             transactionValue = infoDict['cvsrtsell_trdval']
             if transactionValue == '-':
                 transactionValue = 0

@@ -66,7 +66,7 @@ class KOSPISingle2Crawler(NaverFinanceCrawler):
             if len(dateInfoList) > 0:
                 dateStr = dateInfoList[0].text
                 year, month, day = dateStr.split(".")
-                dateObj = datetime.date(int(year), int(month), int(day))
+                dateObj = datetime.datetime(int(year), int(month), int(day))
             if len(amountInfoList) > 0:
                 instituteAmount = int(amountInfoList[4].text.replace(",",""))
                 foreignerAmount = int(amountInfoList[5].text.replace(",",""))

@@ -65,7 +65,7 @@ class KOSPISingleCrawler(NaverFinanceCrawler):
             if len(dateInfoList) > 0:
                 dateStr = dateInfoList[0].text
                 year, month, day = dateStr.split(".")
-                dateObj = datetime.date(int(year), int(month), int(day))
+                dateObj = datetime.datetime(int(year), int(month), int(day))
             if len(priceInfoList) > 0:
                 endPrice = int(priceInfoList[0].text.replace(",",""))
                 startPrice = int(priceInfoList[2].text.replace(",",""))
