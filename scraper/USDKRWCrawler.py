@@ -23,6 +23,6 @@ class USDKRWCrawler(InvestingCrawler):
             "action": "historical_data"
         }
         self.itemName="USD/KRW"
-        self.collection = "dailyIndex"
+        self.collection = "DailyIndex"
         self.isAmountExist = False
 

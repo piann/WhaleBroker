@@ -16,5 +16,5 @@ class SilverCrawler(InvestingCrawler):
             "action": "historical_data"
         }
         self.itemName="silver"
-        self.collection = "dailyFuture"
+        self.collection = "DailyFuture"
         self.isAmountExist = True

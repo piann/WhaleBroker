@@ -105,6 +105,7 @@ class InvestingCrawler(InfoCrawler):
             'Content-Type': 'application/x-www-form-urlencoded',
 
         }
+        self.isAmountExist = False
         self.setRandomUserAgent()
 
     @tryCatchWrapped
@@ -185,7 +186,7 @@ class InvestingCrawler(InfoCrawler):
             if self.isAmountExist is True:
                 amountStr = (infoList[5].text.replace(",",""))
                 amount = self.parseAmount(amountStr)
-                infoDict[dateObj]["amount"] = amount
+                infoDict["amount"] = amount
             
             infoDictList.append(infoDict)
 
