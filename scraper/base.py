@@ -62,7 +62,7 @@ class InfoCrawler(object):
         pass
 
     @abstractmethod
-    def putDataToMongo(self, db, resultData):
+    def putDataToMongo(self, dbConn, resultData):
         # consider resultData format and db collection
         # consider the case utilizing multiple collection    
         pass

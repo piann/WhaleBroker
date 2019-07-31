@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import requests
 import time
 import datetime
-
+import math
 
 class KOSPISingleCrawler(NaverFinanceCrawler):
 # date, endPrice, startPrice, highPrice, lowPrice, amount
@@ -55,7 +55,8 @@ class KOSPISingleCrawler(NaverFinanceCrawler):
         
         dateSelector = 'span.tah'
         priceInfoSelector = 'td.num > span.tah'
-        infoDict = {}
+        resultDict = {}
+        infoDictList = []
 
         # must consider when endPrice is blank b4 market is closed
         for infoSoup in infoSoupList:
@@ -72,7 +73,31 @@ class KOSPISingleCrawler(NaverFinanceCrawler):
                 highPrice = int(priceInfoList[3].text.replace(",",""))
                 lowPrice = int(priceInfoList[4].text.replace(",",""))
                 amount = int(priceInfoList[5].text.replace(",",""))
-                infoDict[dateObj] = {"startPrice":startPrice, "endPrice":endPrice, 
-                "highPrice":highPrice, "lowPrice":lowPrice, "amount":amount}
+                tValue = int(math.floor((lowPrice + highPrice)/2)) * amount
+                infoDictList.append({"time":dateObj, "startPrice":startPrice, "endPrice":endPrice, 
+                "highPrice":highPrice, "lowPrice":lowPrice, "tValue":tValue})
         
-        return infoDict
+        resultDict[code] = infoDictList
+        return resultDict
+
+
+    def putDataToMongo(self, dbConn, resultData):
+        col = dbConn.get_collection("DailyKOSPI")
+        for code, infoDictList in resultData.items():
+            for infoDict in infoDictList:
+                res = col.find_one({"_id":code,"data.time":infoDict["time"]})
+                if res is None: # if data if this date is new 
+                    res = col.update({"_id":code},{"$push":{"data":infoDict}},upsert=True)
+
+                else: # if already exist
+                    for k, v in infoDict.items():
+                        res = col.update({"_id":code,"data.time":infoDict["time"]},{"$set":{
+                                "data.$.{0}".format(k):v
+                            }
+                        })
+                        
+        return True
+
+                        
+
+
