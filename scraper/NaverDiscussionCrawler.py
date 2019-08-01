@@ -11,8 +11,7 @@ class NaverDiscussionCrawler(InfoCrawler):
     def __init__(self):
         super().__init__()
         self.baseBoardUrl = "https://finance.naver.com/item/board.nhn"
-
-
+        self.collection = "DailyHot"
 
 
     @tryCatchWrapped

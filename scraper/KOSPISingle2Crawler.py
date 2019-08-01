@@ -12,7 +12,7 @@ class KOSPISingle2Crawler(NaverFinanceCrawler):
     def __init__(self):
         super().__init__()
         self.basePriceUrl = self.baseUrl + "/item/frgn.nhn"
-        self.collection = "DailyKOSPI"
+        self.collection = "DailyKoreaStock"
 
 
     @tryCatchWrapped

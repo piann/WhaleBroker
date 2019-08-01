@@ -12,7 +12,7 @@ class ShortSellCrawler(InfoCrawler):
         super().__init__()
         self.OTPUrl = "https://short.krx.co.kr/contents/COM/GenerateOTP.jspx?bld=SRT%2F02%2F02010100%2Fsrt02010100&name=form&_={0}"
         self.baseUrl = "https://short.krx.co.kr/contents/SRT/99/SRT99000001.jspx"
-        self.collection = "DailyKOSPI"
+        self.collection = "DailyKoreaStock"
         self.setRandomUserAgent()
     
     @tryCatchWrapped
