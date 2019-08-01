@@ -16,7 +16,7 @@ class KOSPISingleCrawler(NaverFinanceCrawler):
 
     @tryCatchWrapped
     def getResultData(self, code, fromPage, toPage):
-        totalInfoDict = {}
+        totalInfoDict = {code:[]}
         if fromPage > toPage:
             logging.error("fromPage value cannot be bigger than toPage value")
             return None
@@ -25,18 +25,19 @@ class KOSPISingleCrawler(NaverFinanceCrawler):
 
         for pageIdx in range(fromPage, toPage+1):
             infoDictInPage = self.parsePage(code,pageIdx)
-            if pageIdx is not None:
-                totalInfoDict.update(infoDictInPage)
-            
+            if infoDictInPage is not None:
+                totalInfoDict[code] += infoDictInPage[code]
             # check if this page is last page
             if infoDictInPage == prevInfoDictInPage:
+                logging.info("large page index : {0}".format(pageIdx))
                 break
 
-            self.breakTime = random.randint(1,4)
+            self.breakTime = random.randint(6,12)
             self.setRandomUserAgent()
             time.sleep(self.breakTime)
             prevInfoDictInPage = infoDictInPage
 
+        logging.info(totalInfoDict)
         return totalInfoDict
 
 
