@@ -6,7 +6,7 @@ import time
 import datetime
 import random
 
-class KOSPISingle2Crawler(NaverFinanceCrawler):
+class KoreaSingle2Crawler(NaverFinanceCrawler):
 # foreigner, institute
 
     def __init__(self):

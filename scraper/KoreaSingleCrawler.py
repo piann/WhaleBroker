@@ -6,7 +6,7 @@ import time
 import datetime
 import math
 
-class KOSPISingleCrawler(NaverFinanceCrawler):
+class KoreaSingleCrawler(NaverFinanceCrawler):
 # date, endPrice, startPrice, highPrice, lowPrice, amount
 
     def __init__(self):
