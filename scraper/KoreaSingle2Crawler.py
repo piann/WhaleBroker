@@ -25,6 +25,7 @@ class KoreaSingle2Crawler(NaverFinanceCrawler):
         prevInfoDictInPage = None
 
         for pageIdx in range(fromPage, toPage+1):
+            logging.info("process : {0} / {1} ".format(pageIdx, toPage))
             infoDictInPage = self.parsePage(code,pageIdx)
             if infoDictInPage is not None:
                 totalInfoDict[code] += infoDictInPage[code]
@@ -75,8 +76,8 @@ class KoreaSingle2Crawler(NaverFinanceCrawler):
                 foreignerAmount = int(amountInfoList[5].text.replace(",",""))
                 infoDictList.append({
                 "time":dateObj,
-                "instituteAmount":instituteAmount, 
-                "foreignerAmount":foreignerAmount
+                "instituteNetAmount":instituteAmount, 
+                "foreignerNetAmount":foreignerAmount
                 })
 
         resultDict[code] = infoDictList

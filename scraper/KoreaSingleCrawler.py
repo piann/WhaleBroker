@@ -63,6 +63,7 @@ class KoreaSingleCrawler(NaverFinanceCrawler):
 
         # must consider when endPrice is blank b4 market is closed
         for infoSoup in infoSoupList:
+            logging.info("process : {0} / {1} ".format(pageIdx, toPage))
             dateInfoList = infoSoup.select(dateSelector)
             priceInfoList = infoSoup.select(priceInfoSelector)
 
