@@ -15,6 +15,6 @@ class Korea1YBondCrawler(InvestingCrawler):
             "sort_ord": "DESC",
             "action": "historical_data"
         }
-        self.itemName="Korea1YBond"
+        self.itemName="korea1YBond"
         self.collection = "DailyIndex"
         self.isAmountExist = False
