@@ -48,8 +48,8 @@ def getDBConnection(databaseName="whalebroker", ip="127.0.0.1", port=27017):
     return db
 
 @tryCatchWrapped
-def sortJsonList(jsonList,keyName="time"):
-    sortedJsonList = sorted(jsonList, key=lambda k: k.get(keyName, 0), reverse=True)
+def sortJsonList(jsonList,keyName="time", reverse=False):
+    sortedJsonList = sorted(jsonList, key=lambda k: k.get(keyName, 0), reverse=reverse)
     return sortedJsonList
 
 # 2019/07/24
