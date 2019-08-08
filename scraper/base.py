@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 import math
 import pymongo
 
+from lxml.html import fromstring
 
 class InfoCrawler(object):
     __metaclass__ = ABCMeta
@@ -54,8 +55,34 @@ class InfoCrawler(object):
 
     @tryCatchWrapped
     def getProxyList(self):
-        return []
+        urls = ['https://short.krx.co.kr/main/main.jsp', 'https://www.investing.com/', 'https://finance.naver.com/']
+        listUrl = 'https://free-proxy-list.net/'
 
+        response = requests.get(listUrl)
+        parser = fromstring(response.text)
+        proxies = set()
+        for i in parser.xpath('//tbody/tr')[:10]:
+            if i.xpath('.//td[7][contains(text(),"yes")]'):
+                proxy = ":".join([i.xpath('.//td[1]/text()')[0], i.xpath('.//td[2]/text()')[0]])
+                proxies.add(proxy)
+
+        proxyResults = []
+        for i in proxies:
+            checkUrlCount = 0
+            for j in urls:
+                # print(j + " REQ #%d : "%(checkUrlCount+1), end='')
+                tempProxies = {"http" : i, "https" : i}
+                try:
+                    response = requests.get(j, proxies=tempProxies)
+                    checkUrlCount +=1
+                    # print("OK")
+                except:
+                    # print("SKIP")
+                    break
+            if(checkUrlCount == 3):
+                proxyResults.append(tempProxies)
+
+        return proxyResults
 
     @abstractmethod
     def getResultData(self, inputN, rangeN):
