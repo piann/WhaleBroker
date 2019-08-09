@@ -55,7 +55,10 @@ class InfoCrawler(object):
 
     @tryCatchWrapped
     def getProxyList(self):
-        urls = ['https://short.krx.co.kr/main/main.jsp', 'https://www.investing.com/', 'https://finance.naver.com/']
+        targetUrlList = ['https://short.krx.co.kr/main/main.jsp', 'https://www.investing.com/', 'https://finance.naver.com/']
+        
+        # deprecated
+        '''
         listUrl = 'https://free-proxy-list.net/'
 
         response = requests.get(listUrl)
@@ -65,23 +68,23 @@ class InfoCrawler(object):
             if i.xpath('.//td[7][contains(text(),"yes")]'):
                 proxy = ":".join([i.xpath('.//td[1]/text()')[0], i.xpath('.//td[2]/text()')[0]])
                 proxies.add(proxy)
-
+        '''
         proxyResults = []
-        for i in proxies:
+        for proxyUrl in PROXY_LIST:
             checkUrlCount = 0
-            for j in urls:
-                # print(j + " REQ #%d : "%(checkUrlCount+1), end='')
-                tempProxies = {"http" : i, "https" : i}
+            for targetUrl in targetUrlList:
+                tempProxies = {"http" : proxyUrl, "https" : proxyUrl}
                 try:
-                    response = requests.get(j, proxies=tempProxies)
+                    response = requests.get(targetUrl, proxies=tempProxies, timeout=10)
                     checkUrlCount +=1
-                    # print("OK")
                 except:
-                    # print("SKIP")
+                    logging.info("Slow or Error : {0}".format(proxyUrl))
                     break
+
             if(checkUrlCount == 3):
                 proxyResults.append(tempProxies)
-
+                logging.info("Success Proxy  : {0}".format(proxyUrl))
+        
         return proxyResults
 
     @abstractmethod
