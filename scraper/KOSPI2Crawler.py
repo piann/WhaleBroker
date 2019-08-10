@@ -5,6 +5,8 @@ import requests
 import time
 import datetime
 import math
+import random
+
 
 class KOSPI2Crawler(NaverFinanceCrawler):
 # date, endPrice, startPrice, highPrice, lowPrice, amount
@@ -51,7 +53,7 @@ class KOSPI2Crawler(NaverFinanceCrawler):
         m = str(now.month).rjust(2,"0")
         d = str(now.day).rjust(2,"0")
         params = {"bizdate":"{0}{1}{2}".format(y,m,d), "page":str(pageIdx)}
-        res = requests.get(self.baseAmountUrl, headers=self.headers, params=params)
+        res = self.requestGetWithProxy(self.baseAmountUrl, headers=self.headers, params=params, timeout=15)
         if res is None or res.ok is False:
             logging.error("Some problem in request")
             return None

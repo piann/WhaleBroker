@@ -45,7 +45,7 @@ class KoreaSingle2Crawler(NaverFinanceCrawler):
     @tryCatchWrapped
     def parsePage(self, code, pageIdx):
         params = {"code":str(code), "page":str(pageIdx)}
-        res = requests.get(self.basePriceUrl, headers=self.headers, params=params)
+        res = self.requestGetWithProxy(self.basePriceUrl, headers=self.headers, params=params,  timeout=15)
         if res is None or res.ok is False:
             logging.error("Some problem in request")
             return None

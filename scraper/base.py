@@ -19,6 +19,7 @@ class InfoCrawler(object):
         self.headers = {}
         self.itemName = None
         self.collection = None
+        self.proxyList = self.getProxyList()
         
 
     def setRandomUserAgent(self):
@@ -54,7 +55,7 @@ class InfoCrawler(object):
         return userAgent
 
     @tryCatchWrapped
-    def getProxyList(self):
+    def getProxyList(self, minPerformanceTime=10):
         targetUrlList = ['https://short.krx.co.kr/main/main.jsp', 'https://www.investing.com/', 'https://finance.naver.com/']
         
         # deprecated
@@ -75,7 +76,10 @@ class InfoCrawler(object):
             for targetUrl in targetUrlList:
                 tempProxies = {"http" : proxyUrl, "https" : proxyUrl}
                 try:
-                    response = requests.get(targetUrl, proxies=tempProxies, timeout=10)
+                    response = requests.get(targetUrl, proxies=tempProxies, timeout=minPerformanceTime)
+                    if response is None:
+                        break
+
                     checkUrlCount +=1
                 except:
                     logging.info("Slow or Error : {0}".format(proxyUrl))
@@ -85,6 +89,8 @@ class InfoCrawler(object):
                 proxyResults.append(tempProxies)
                 logging.info("Success Proxy  : {0}".format(proxyUrl))
         
+        logging.info("Number of Success Proxy : {0}".format(len(proxyResults)))
+        self.proxyList = proxyResults
         return proxyResults
 
     @abstractmethod
@@ -118,6 +124,38 @@ class InfoCrawler(object):
                         })
                         
         return True
+
+    @tryCatchWrapped
+    def requestGetWithProxy(self, *args,**kwargs):
+        retryCount = 7
+        for idx in range(0,retryCount):
+            try:
+                proxies = random.choice(self.proxyList)
+                res = requests.get(*args, **kwargs, proxies=proxies)
+                if res is not None:
+                    return res
+            except Exception as e:
+                logging.error("Request Error in trial #{0}".format(idx))
+                logging.error(str(e), exc_info=True)
+
+        return None
+
+
+    @tryCatchWrapped
+    def requestPostWithProxy(self, *args,**kwargs):
+        retryCount = 7
+        for idx in range(0,retryCount):
+            try:
+                proxies = random.choice(self.proxyList)
+                res = requests.post(*args, **kwargs, proxies=proxies)
+                if res is not None:
+                    return res
+            except Exception as e:
+                logging.error("Request Error in trial #{0}".format(idx))
+                logging.error(str(e), exc_info=True)
+
+        return None
+
 
 class InvestingCrawler(InfoCrawler):
     # input is items of form data (ex : curr_id: 8830, smlID: 300004, header: Gold Futures Historical Data)

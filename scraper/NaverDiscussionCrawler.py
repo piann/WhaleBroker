@@ -5,6 +5,7 @@ import requests
 import time
 import datetime
 from .base import *
+import random
 
 class NaverDiscussionCrawler(InfoCrawler):
 
@@ -63,7 +64,7 @@ class NaverDiscussionCrawler(InfoCrawler):
     @tryCatchWrapped
     def parsePage(self, code, pageIdx):
         params = {"code":str(code), "page":str(pageIdx)}
-        res = requests.get(self.baseBoardUrl, headers=self.headers, params=params)
+        res = self.requestGetWithProxy(self.baseBoardUrl, headers=self.headers, params=params, timeout=15)
         if res is None or res.ok is False:
             logging.error("Some problem in request")
             return None

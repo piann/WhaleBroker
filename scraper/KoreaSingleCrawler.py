@@ -5,6 +5,7 @@ import requests
 import time
 import datetime
 import math
+import random
 
 class KoreaSingleCrawler(NaverFinanceCrawler):
 # date, endPrice, startPrice, highPrice, lowPrice, amount
@@ -24,6 +25,7 @@ class KoreaSingleCrawler(NaverFinanceCrawler):
         prevInfoDictInPage = {}
 
         for pageIdx in range(fromPage, toPage+1):
+            logging.info("process : {0} / {1} ".format(pageIdx, toPage))
             infoDictInPage = self.parsePage(code,pageIdx)
 
             # check if this page is last page
@@ -31,9 +33,9 @@ class KoreaSingleCrawler(NaverFinanceCrawler):
                 logging.info("large page index : {0}".format(pageIdx))
                 break
 
-            self.breakTime = random.randint(6,12)
             self.setRandomUserAgent()
-            time.sleep(self.breakTime)
+            # self.breakTime = random.randint(6,12)
+            # time.sleep(self.breakTime) no need with proxy
             if infoDictInPage is not None:
                 totalInfoDict[code] += infoDictInPage[code]
                 prevInfoDictInPage = infoDictInPage
@@ -45,7 +47,7 @@ class KoreaSingleCrawler(NaverFinanceCrawler):
     @tryCatchWrapped
     def parsePage(self, code, pageIdx):
         params = {"code":str(code), "page":str(pageIdx)}
-        res = requests.get(self.basePriceUrl, headers=self.headers, params=params)
+        res = self.requestGetWithProxy(self.basePriceUrl, headers=self.headers, params=params, timeout=20)
         if res is None or res.ok is False:
             logging.error("Some problem in request")
             return None
@@ -63,7 +65,6 @@ class KoreaSingleCrawler(NaverFinanceCrawler):
 
         # must consider when endPrice is blank b4 market is closed
         for infoSoup in infoSoupList:
-            logging.info("process : {0} / {1} ".format(pageIdx, toPage))
             dateInfoList = infoSoup.select(dateSelector)
             priceInfoList = infoSoup.select(priceInfoSelector)
 

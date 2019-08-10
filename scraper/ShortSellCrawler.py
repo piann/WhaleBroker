@@ -5,7 +5,6 @@ import datetime
 import requests
 import json
 
-
 class ShortSellCrawler(InfoCrawler):
 
     def __init__(self):
@@ -41,7 +40,7 @@ class ShortSellCrawler(InfoCrawler):
         infoJsonList = dumpData['block1']
         if len(infoJsonList) == 0:
             return None
-            
+
         for infoDict in infoJsonList:
             dateStr = infoDict['trd_dd']
             year, month, day = dateStr.split("/")
