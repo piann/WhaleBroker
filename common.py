@@ -14525,5 +14525,2210 @@ CODE_TABLE = [
         "shortCode": "A238490",
         "codeName": "힘스",
         "marketName": "KOSDAQ"
+    },
+    {
+        "shortCode": "A145850",
+        "codeName": "TREX 펀더멘탈 200",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A097750",
+        "codeName": "TREX 중소형가치",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A108590",
+        "codeName": "TREX 200",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A292150",
+        "codeName": "TIGER TOP10",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A248270",
+        "codeName": "TIGER S&P글로벌헬스케어(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A269370",
+        "codeName": "TIGER S&P글로벌인프라(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A310970",
+        "codeName": "TIGER MSCI Korea TR",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A289250",
+        "codeName": "TIGER MSCI KOREA ESG유니버설",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A289260",
+        "codeName": "TIGER MSCI KOREA ESG리더스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A138530",
+        "codeName": "TIGER LG그룹+펀더멘털",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A228820",
+        "codeName": "TIGER KTOP30",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A307620",
+        "codeName": "TIGER KRX300선물인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A307610",
+        "codeName": "TIGER KRX300레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A292160",
+        "codeName": "TIGER KRX300",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A091210",
+        "codeName": "TIGER KRX100",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A300610",
+        "codeName": "TIGER K게임",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A228790",
+        "codeName": "TIGER 화장품",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A138540",
+        "codeName": "TIGER 현대차그룹+펀더멘털",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A143860",
+        "codeName": "TIGER 헬스케어",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A277650",
+        "codeName": "TIGER 코스피중형주",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A277640",
+        "codeName": "TIGER 코스피대형주",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A210780",
+        "codeName": "TIGER 코스피고배당",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A277630",
+        "codeName": "TIGER 코스피",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A261060",
+        "codeName": "TIGER 코스닥150IT",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A250780",
+        "codeName": "TIGER 코스닥150선물인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A261070",
+        "codeName": "TIGER 코스닥150바이오테크",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A267300",
+        "codeName": "TIGER 코스닥150로우볼",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A233160",
+        "codeName": "TIGER 코스닥150 레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A232080",
+        "codeName": "TIGER 코스닥150",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A245360",
+        "codeName": "TIGER 차이나HSCEI",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A217780",
+        "codeName": "TIGER 차이나CSI300인버스(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A204480",
+        "codeName": "TIGER 차이나CSI300레버리지(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A192090",
+        "codeName": "TIGER 차이나CSI300",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A117690",
+        "codeName": "TIGER 차이나항셍25",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A307520",
+        "codeName": "TIGER 지주회사",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A266140",
+        "codeName": "TIGER 지속배당",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A157500",
+        "codeName": "TIGER 증권",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A302210",
+        "codeName": "TIGER 중장기국채선물인버스2X",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A302200",
+        "codeName": "TIGER 중장기국채선물인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A302190",
+        "codeName": "TIGER 중장기국채",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A292130",
+        "codeName": "TIGER 중소형성장",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A292140",
+        "codeName": "TIGER 중소형가치",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A292120",
+        "codeName": "TIGER 중소형",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A150460",
+        "codeName": "TIGER 중국소비테마",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A248260",
+        "codeName": "TIGER 일본TOPIX헬스케어(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A195920",
+        "codeName": "TIGER 일본TOPIX(합성 H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A292590",
+        "codeName": "TIGER 일본엔선물인버스2X",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A292580",
+        "codeName": "TIGER 일본엔선물인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A292570",
+        "codeName": "TIGER 일본엔선물레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A292560",
+        "codeName": "TIGER 일본엔선물",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A241180",
+        "codeName": "TIGER 일본니케이225",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A123310",
+        "codeName": "TIGER 인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A236350",
+        "codeName": "TIGER 인도니프티50레버리지(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A225060",
+        "codeName": "TIGER 이머징마켓MSCI레버리지(합..",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A307510",
+        "codeName": "TIGER 의료기기",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A091220",
+        "codeName": "TIGER 은행",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A245350",
+        "codeName": "TIGER 유로스탁스배당30",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A225050",
+        "codeName": "TIGER 유로스탁스레버리지(합성 H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A195930",
+        "codeName": "TIGER 유로스탁스50(합성 H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A130680",
+        "codeName": "TIGER 원유선물Enhanced(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A217770",
+        "codeName": "TIGER 원유선물인버스(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A261140",
+        "codeName": "TIGER 우선주",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A227570",
+        "codeName": "TIGER 우량가치",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A228800",
+        "codeName": "TIGER 여행레저",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A157490",
+        "codeName": "TIGER 소프트웨어",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A138520",
+        "codeName": "TIGER 삼성그룹펀더멘털",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A329200",
+        "codeName": "TIGER 부동산인프라고배당",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A170350",
+        "codeName": "TIGER 베타플러스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A211560",
+        "codeName": "TIGER 배당성장",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A098560",
+        "codeName": "TIGER 방송통신",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A091230",
+        "codeName": "TIGER 반도체",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A228810",
+        "codeName": "TIGER 미디어컨텐츠",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A225030",
+        "codeName": "TIGER 미국S&P500선물인버스(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A143850",
+        "codeName": "TIGER 미국S&P500선물(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A225040",
+        "codeName": "TIGER 미국S&P500레버리지(합성 H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A182480",
+        "codeName": "TIGER 미국MSCI리츠(합성 H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A305080",
+        "codeName": "TIGER 미국채10년선물",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A261120",
+        "codeName": "TIGER 미국달러선물인버스2X",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A261110",
+        "codeName": "TIGER 미국달러선물레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A329750",
+        "codeName": "TIGER 미국달러단기채권액티브",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A245340",
+        "codeName": "TIGER 미국다우존스30",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A203780",
+        "codeName": "TIGER 미국나스닥바이오",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A133690",
+        "codeName": "TIGER 미국나스닥100",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A147970",
+        "codeName": "TIGER 모멘텀",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A174350",
+        "codeName": "TIGER 로우볼",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A123320",
+        "codeName": "TIGER 레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A105010",
+        "codeName": "TIGER 라틴35",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A292100",
+        "codeName": "TIGER 대형성장",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A292110",
+        "codeName": "TIGER 대형가치",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A253990",
+        "codeName": "TIGER 대만TAIEX선물(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A157450",
+        "codeName": "TIGER 단기통안채",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A272580",
+        "codeName": "TIGER 단기채권액티브",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A182490",
+        "codeName": "TIGER 단기선진하이일드(합성 H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A137610",
+        "codeName": "TIGER 농산물선물Enhanced(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A139320",
+        "codeName": "TIGER 금은선물(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A139310",
+        "codeName": "TIGER 금속선물(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A276000",
+        "codeName": "TIGER 글로벌자원생산기업(합성 H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A275980",
+        "codeName": "TIGER 글로벌4차산업혁신기술(합성..",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A302170",
+        "codeName": "TIGER 국채선물3년인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A302180",
+        "codeName": "TIGER 국채선물10년인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A114820",
+        "codeName": "TIGER 국채3년",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A160580",
+        "codeName": "TIGER 구리실물",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A319640",
+        "codeName": "TIGER 골드선물(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A237440",
+        "codeName": "TIGER 경기방어채권혼합",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A139280",
+        "codeName": "TIGER 경기방어",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A217790",
+        "codeName": "TIGER 가격조정",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A305540",
+        "codeName": "TIGER 2차전지테마",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A310960",
+        "codeName": "TIGER 200TR",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A243880",
+        "codeName": "TIGER 200IT레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A289480",
+        "codeName": "TIGER 200커버드콜ATM",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A166400",
+        "codeName": "TIGER 200커버드콜5%OTM",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A315270",
+        "codeName": "TIGER 200커뮤니케이션서비스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A243890",
+        "codeName": "TIGER 200에너지화학레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A252710",
+        "codeName": "TIGER 200선물인버스2X",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A267770",
+        "codeName": "TIGER 200선물레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A252000",
+        "codeName": "TIGER 200동일가중",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A139260",
+        "codeName": "TIGER 200 IT",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A227540",
+        "codeName": "TIGER 200 헬스케어",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A139240",
+        "codeName": "TIGER 200 철강소재",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A139230",
+        "codeName": "TIGER 200 중공업",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A139250",
+        "codeName": "TIGER 200 에너지화학",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A227560",
+        "codeName": "TIGER 200 생활소비재",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A227550",
+        "codeName": "TIGER 200 산업재",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A139270",
+        "codeName": "TIGER 200 금융",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A139290",
+        "codeName": "TIGER 200 경기소비재",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A139220",
+        "codeName": "TIGER 200 건설",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A102110",
+        "codeName": "TIGER 200",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A292500",
+        "codeName": "SMART KRX300",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A220130",
+        "codeName": "SMART 중국본토 중소형 CSI500(합..",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A208470",
+        "codeName": "SMART 선진국MSCI World(합성 H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A295040",
+        "codeName": "SMART 200TR",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A168300",
+        "codeName": "KTOP 코스피50",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A100910",
+        "codeName": "KOSEF KRX100",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A331910",
+        "codeName": "KOSEF Fn중소형",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A122260",
+        "codeName": "KOSEF 통안채1년",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A153270",
+        "codeName": "KOSEF 코스피100",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A291620",
+        "codeName": "KOSEF 코스닥150선물인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A291630",
+        "codeName": "KOSEF 코스닥150선물레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A291610",
+        "codeName": "KOSEF 코스닥150선물",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A316670",
+        "codeName": "KOSEF 코스닥150",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A260270",
+        "codeName": "KOSEF 저PBR가중",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A200250",
+        "codeName": "KOSEF 인도Nifty50(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A104520",
+        "codeName": "KOSEF 블루칩",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A260200",
+        "codeName": "KOSEF 배당바이백Plus",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A139660",
+        "codeName": "KOSEF 미국달러선물인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A225800",
+        "codeName": "KOSEF 미국달러선물레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A230480",
+        "codeName": "KOSEF 미국달러선물 인버스2X(합성..",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A138230",
+        "codeName": "KOSEF 미국달러선물",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A130730",
+        "codeName": "KOSEF 단기자금",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A114470",
+        "codeName": "KOSEF 국고채3년",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A167860",
+        "codeName": "KOSEF 국고채10년레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A148070",
+        "codeName": "KOSEF 국고채10년",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A104530",
+        "codeName": "KOSEF 고배당",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A294400",
+        "codeName": "KOSEF 200TR",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A253230",
+        "codeName": "KOSEF 200선물인버스2X",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A253240",
+        "codeName": "KOSEF 200선물인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A253250",
+        "codeName": "KOSEF 200선물레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A152280",
+        "codeName": "KOSEF 200 선물",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A069660",
+        "codeName": "KOSEF 200",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A271050",
+        "codeName": "KODEX WTI원유선물인버스(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A261220",
+        "codeName": "KODEX WTI원유선물(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A329670",
+        "codeName": "KODEX TRF7030",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A329660",
+        "codeName": "KODEX TRF5050",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A329650",
+        "codeName": "KODEX TRF3070",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A315930",
+        "codeName": "KODEX Top5PlusTR",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A269420",
+        "codeName": "KODEX S&P글로벌인프라(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A275300",
+        "codeName": "KODEX MSCI퀄리티",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A275290",
+        "codeName": "KODEX MSCI밸류",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A275280",
+        "codeName": "KODEX MSCI모멘텀",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A278540",
+        "codeName": "KODEX MSCI Korea TR",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A289040",
+        "codeName": "KODEX MSCI KOREA ESG유니버설",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A156080",
+        "codeName": "KODEX MSCI Korea",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A291890",
+        "codeName": "KODEX MSCI EM선물(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A229720",
+        "codeName": "KODEX KTOP30",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A306960",
+        "codeName": "KODEX KRX300선물인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A306950",
+        "codeName": "KODEX KRX300레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A292190",
+        "codeName": "KODEX KRX300",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A266370",
+        "codeName": "KODEX IT",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A296710",
+        "codeName": "KODEX FnKorea50",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A325010",
+        "codeName": "KODEX Fn성장",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A291660",
+        "codeName": "KODEX China H선물인버스(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A204450",
+        "codeName": "KODEX China H 레버리지(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A099140",
+        "codeName": "KODEX China H",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A266420",
+        "codeName": "KODEX 헬스케어",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A298770",
+        "codeName": "KODEX 한국대만IT프리미어",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A266410",
+        "codeName": "KODEX 필수소비재",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A247800",
+        "codeName": "KODEX 턴어라운드투자",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A244660",
+        "codeName": "KODEX 퀄리티Plus",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A138920",
+        "codeName": "KODEX 콩선물(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A237350",
+        "codeName": "KODEX 코스피100",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A226490",
+        "codeName": "KODEX 코스피",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A251340",
+        "codeName": "KODEX 코스닥150선물인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A233740",
+        "codeName": "KODEX 코스닥150 레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A229200",
+        "codeName": "KODEX 코스닥 150",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A279540",
+        "codeName": "KODEX 최소변동성",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A117680",
+        "codeName": "KODEX 철강",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A102970",
+        "codeName": "KODEX 증권",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A283580",
+        "codeName": "KODEX 중국본토CSI300",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A169950",
+        "codeName": "KODEX 중국본토 A50",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A273130",
+        "codeName": "KODEX 종합채권(AA-이상)액티브",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A091180",
+        "codeName": "KODEX 자동차",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A101280",
+        "codeName": "KODEX 일본TOPIX100",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A114800",
+        "codeName": "KODEX 인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A091170",
+        "codeName": "KODEX 은행",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A144600",
+        "codeName": "KODEX 은선물(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A140710",
+        "codeName": "KODEX 운송",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A117460",
+        "codeName": "KODEX 에너지화학",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A256750",
+        "codeName": "KODEX 심천ChiNext(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A247790",
+        "codeName": "KODEX 성장투자",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A251350",
+        "codeName": "KODEX 선진국MSCI World",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A213610",
+        "codeName": "KODEX 삼성그룹밸류",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A102780",
+        "codeName": "KODEX 삼성그룹",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A140700",
+        "codeName": "KODEX 보험",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A244670",
+        "codeName": "KODEX 밸류Plus",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A237370",
+        "codeName": "KODEX 배당성장채권혼합",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A211900",
+        "codeName": "KODEX 배당성장",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A325020",
+        "codeName": "KODEX 배당가치",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A091160",
+        "codeName": "KODEX 반도체",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A244580",
+        "codeName": "KODEX 바이오",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A266360",
+        "codeName": "KODEX 미디어&엔터테인먼트",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A218420",
+        "codeName": "KODEX 미국S&P에너지(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A200030",
+        "codeName": "KODEX 미국S&P산업재(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A185680",
+        "codeName": "KODEX 미국S&P바이오(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A200040",
+        "codeName": "KODEX 미국S&P금융(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A276970",
+        "codeName": "KODEX 미국S&P고배당커버드콜(합성..",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A219480",
+        "codeName": "KODEX 미국S&P500선물(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A200020",
+        "codeName": "KODEX 미국S&P IT(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A314250",
+        "codeName": "KODEX 미국FANG플러스(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A304670",
+        "codeName": "KODEX 미국채울트라30년선물인버스..",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A304660",
+        "codeName": "KODEX 미국채울트라30년선물(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A308620",
+        "codeName": "KODEX 미국채10년선물",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A280930",
+        "codeName": "KODEX 미국러셀2000(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A261260",
+        "codeName": "KODEX 미국달러선물인버스2X",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A261270",
+        "codeName": "KODEX 미국달러선물인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A261250",
+        "codeName": "KODEX 미국달러선물레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A261240",
+        "codeName": "KODEX 미국달러선물",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A304940",
+        "codeName": "KODEX 미국나스닥100선물(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A244620",
+        "codeName": "KODEX 모멘텀Plus",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A321410",
+        "codeName": "KODEX 멀티에셋하이인컴(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A122630",
+        "codeName": "KODEX 레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A214980",
+        "codeName": "KODEX 단기채권PLUS",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A153130",
+        "codeName": "KODEX 단기채권",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A273140",
+        "codeName": "KODEX 단기변동금리부채권액티브",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A102960",
+        "codeName": "KODEX 기계장비",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A276990",
+        "codeName": "KODEX 글로벌4차산업로보틱스(합성..",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A292770",
+        "codeName": "KODEX 국채선물3년인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A176950",
+        "codeName": "KODEX 국채선물10년인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A152380",
+        "codeName": "KODEX 국채선물10년",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A114260",
+        "codeName": "KODEX 국고채3년",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A138910",
+        "codeName": "KODEX 구리선물(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A280940",
+        "codeName": "KODEX 골드선물인버스(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A132030",
+        "codeName": "KODEX 골드선물(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A279530",
+        "codeName": "KODEX 고배당",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A266390",
+        "codeName": "KODEX 경기소비재",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A300950",
+        "codeName": "KODEX 게임산업",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A117700",
+        "codeName": "KODEX 건설",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A247780",
+        "codeName": "KODEX 가치투자",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A271060",
+        "codeName": "KODEX 3대농산물선물(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A305720",
+        "codeName": "KODEX 2차전지산업",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A278530",
+        "codeName": "KODEX 200TR",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A252670",
+        "codeName": "KODEX 200선물인버스2X",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A284430",
+        "codeName": "KODEX 200미국채혼합",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A252650",
+        "codeName": "KODEX 200동일가중",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A223190",
+        "codeName": "KODEX 200가치저변동",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A226980",
+        "codeName": "KODEX 200 중소형",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A069500",
+        "codeName": "KODEX 200",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A277540",
+        "codeName": "KINDEX S&P아시아TOP50",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A226380",
+        "codeName": "KINDEX 한류",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A261920",
+        "codeName": "KINDEX 필리핀MSCI(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A305050",
+        "codeName": "KINDEX 코스피",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A251890",
+        "codeName": "KINDEX 코스닥(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A272910",
+        "codeName": "KINDEX 중장기국공채액티브",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A114460",
+        "codeName": "KINDEX 중기국고채",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A219900",
+        "codeName": "KINDEX 중국본토CSI300레버리지(합..",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A168580",
+        "codeName": "KINDEX 중국본토CSI300",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A205720",
+        "codeName": "KINDEX 일본TOPIX인버스(합성 H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A196030",
+        "codeName": "KINDEX 일본TOPIX레버리지(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A238720",
+        "codeName": "KINDEX 일본Nikkei225(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A145670",
+        "codeName": "KINDEX 인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A256440",
+        "codeName": "KINDEX 인도네시아MSCI(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A316300",
+        "codeName": "KINDEX 싱가포르리츠",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A322150",
+        "codeName": "KINDEX 스마트하이베타",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A322120",
+        "codeName": "KINDEX 스마트퀄리티",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A272230",
+        "codeName": "KINDEX 스마트밸류",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A272220",
+        "codeName": "KINDEX 스마트모멘텀",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A322130",
+        "codeName": "KINDEX 스마트로우볼",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A108450",
+        "codeName": "KINDEX 삼성그룹섹터가중",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A131890",
+        "codeName": "KINDEX 삼성그룹동일가중",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A245710",
+        "codeName": "KINDEX 베트남VN30(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A143460",
+        "codeName": "KINDEX 밸류대형",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A211260",
+        "codeName": "KINDEX 배당성장",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A309230",
+        "codeName": "KINDEX 미국WideMoat가치주",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A181480",
+        "codeName": "KINDEX 미국다우존스리츠(합성 H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A280320",
+        "codeName": "KINDEX 미국4차산업인터넷(합성 H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A291130",
+        "codeName": "KINDEX 멕시코MSCI(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A152500",
+        "codeName": "KINDEX 레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A265690",
+        "codeName": "KINDEX 러시아MSCI(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A190620",
+        "codeName": "KINDEX 단기통안채",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A299080",
+        "codeName": "KINDEX 국채선물3년인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A299070",
+        "codeName": "KINDEX 국채선물10년인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A232590",
+        "codeName": "KINDEX 골드선물 인버스2X(합성 H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A225130",
+        "codeName": "KINDEX 골드선물 레버리지(합성 H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A332500",
+        "codeName": "KINDEX 200TR",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A105190",
+        "codeName": "KINDEX 200",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A241390",
+        "codeName": "KBSTAR V&S셀렉트밸류채권혼합",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A234310",
+        "codeName": "KBSTAR V&S셀렉트밸류",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A307020",
+        "codeName": "KBSTAR KRX300선물인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A319870",
+        "codeName": "KBSTAR KRX300미국달러선물혼합",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A307010",
+        "codeName": "KBSTAR KRX300레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A292050",
+        "codeName": "KBSTAR KRX300",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A300310",
+        "codeName": "KBSTAR KQ모멘텀밸류",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A300300",
+        "codeName": "KBSTAR KQ모멘텀로우볼",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A270800",
+        "codeName": "KBSTAR KQ고배당",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A326240",
+        "codeName": "KBSTAR IT플러스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A290130",
+        "codeName": "KBSTAR ESG사회책임투자",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A253290",
+        "codeName": "KBSTAR 헬스케어채권혼합",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A253280",
+        "codeName": "KBSTAR 헬스케어",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A302450",
+        "codeName": "KBSTAR 코스피",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A275750",
+        "codeName": "KBSTAR 코스닥150선물인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A278240",
+        "codeName": "KBSTAR 코스닥150선물레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A270810",
+        "codeName": "KBSTAR 코스닥150",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A183700",
+        "codeName": "KBSTAR 채권혼합",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A250730",
+        "codeName": "KBSTAR 차이나HSCEI(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A291680",
+        "codeName": "KBSTAR 차이나H선물인버스(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A283930",
+        "codeName": "KBSTAR 지주회사",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A272570",
+        "codeName": "KBSTAR 중장기국공채액티브",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A300290",
+        "codeName": "KBSTAR 중소형모멘텀밸류",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A300280",
+        "codeName": "KBSTAR 중소형모멘텀로우볼",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A281990",
+        "codeName": "KBSTAR 중소형고배당",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A136340",
+        "codeName": "KBSTAR 중기우량회사채",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A310080",
+        "codeName": "KBSTAR 중국MSCI China선물(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A174360",
+        "codeName": "KBSTAR 중국본토대형주CSI100",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A183710",
+        "codeName": "KBSTAR 주식혼합",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A196220",
+        "codeName": "KBSTAR 일본TOPIX레버리지(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A140580",
+        "codeName": "KBSTAR 우량업종",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A140570",
+        "codeName": "KBSTAR 수출주",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A219390",
+        "codeName": "KBSTAR 미국S&P원유생산기업(합성 ..",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A267500",
+        "codeName": "KBSTAR 미국장기국채선물인버스2X(..",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A267450",
+        "codeName": "KBSTAR 미국장기국채선물인버스(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A267490",
+        "codeName": "KBSTAR 미국장기국채선물레버리지(..",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A267440",
+        "codeName": "KBSTAR 미국장기국채선물(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A252720",
+        "codeName": "KBSTAR 모멘텀밸류",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A252730",
+        "codeName": "KBSTAR 모멘텀로우볼",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A315960",
+        "codeName": "KBSTAR 대형고배당10TR",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A196230",
+        "codeName": "KBSTAR 단기통안채",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A272560",
+        "codeName": "KBSTAR 단기국공채액티브",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A326230",
+        "codeName": "KBSTAR 내수주플러스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A276650",
+        "codeName": "KBSTAR 글로벌4차산업IT(합성 H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A295020",
+        "codeName": "KBSTAR 국채선물10년인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A295000",
+        "codeName": "KBSTAR 국채선물10년",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A282000",
+        "codeName": "KBSTAR 국고채3년선물인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A114100",
+        "codeName": "KBSTAR 국고채3년",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A266160",
+        "codeName": "KBSTAR 고배당",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A300640",
+        "codeName": "KBSTAR 게임테마",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A105780",
+        "codeName": "KBSTAR 5대그룹주",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A285000",
+        "codeName": "KBSTAR 200IT",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A315480",
+        "codeName": "KBSTAR 200커뮤니케이션서비스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A285020",
+        "codeName": "KBSTAR 200철강소재",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A285010",
+        "codeName": "KBSTAR 200중공업",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A284990",
+        "codeName": "KBSTAR 200에너지화학",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A252420",
+        "codeName": "KBSTAR 200선물인버스2X",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A252410",
+        "codeName": "KBSTAR 200선물인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A252400",
+        "codeName": "KBSTAR 200선물레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A287330",
+        "codeName": "KBSTAR 200생활소비재",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A287320",
+        "codeName": "KBSTAR 200산업재",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A284980",
+        "codeName": "KBSTAR 200금융",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A290080",
+        "codeName": "KBSTAR 200고배당커버드콜ATM",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A287310",
+        "codeName": "KBSTAR 200경기소비재",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A287300",
+        "codeName": "KBSTAR 200건설",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A148020",
+        "codeName": "KBSTAR 200",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A332940",
+        "codeName": "HANARO MSCI Korea TR",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A304760",
+        "codeName": "HANARO KRX300",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A322400",
+        "codeName": "HANARO e커머스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A306530",
+        "codeName": "HANARO 코스닥150선물레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A304770",
+        "codeName": "HANARO 코스닥150",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A306540",
+        "codeName": "HANARO 단기통안채",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A314700",
+        "codeName": "HANARO 농업융복합산업",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A322410",
+        "codeName": "HANARO 고배당",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A332930",
+        "codeName": "HANARO 200TR",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A306520",
+        "codeName": "HANARO 200선물인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A304780",
+        "codeName": "HANARO 200선물레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A293180",
+        "codeName": "HANARO 200",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A292730",
+        "codeName": "FOCUS KRX300",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A285690",
+        "codeName": "FOCUS ESG리더스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A269530",
+        "codeName": "ARIRANG S&P글로벌인프라",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A309170",
+        "codeName": "ARIRANG KRX300IT",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A309210",
+        "codeName": "ARIRANG KRX300헬스케어",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A309200",
+        "codeName": "ARIRANG KRX300자유소비재",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A309190",
+        "codeName": "ARIRANG KRX300산업재",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A309180",
+        "codeName": "ARIRANG KRX300금융",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A292750",
+        "codeName": "ARIRANG KRX300",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A278420",
+        "codeName": "ARIRANG ESG우수기업",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A328370",
+        "codeName": "ARIRANG 코스피TR",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A301440",
+        "codeName": "ARIRANG 코스피중형주",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A122090",
+        "codeName": "ARIRANG 코스피50",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A227830",
+        "codeName": "ARIRANG 코스피",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A301410",
+        "codeName": "ARIRANG 코스닥150선물인버스",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A301400",
+        "codeName": "ARIRANG 코스닥150",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A266550",
+        "codeName": "ARIRANG 중형주저변동50",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A280920",
+        "codeName": "ARIRANG 주도업종",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A239660",
+        "codeName": "ARIRANG 우량회사채50 1년",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A256450",
+        "codeName": "ARIRANG 심천차이넥스트(합성)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A195980",
+        "codeName": "ARIRANG 신흥국MSCI(합성 H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A238670",
+        "codeName": "ARIRANG 스마트베타Quality채권혼..",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A222180",
+        "codeName": "ARIRANG 스마트베타 Value",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A222200",
+        "codeName": "ARIRANG 스마트베타 Quality",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A222190",
+        "codeName": "ARIRANG 스마트베타 Momentum",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A236460",
+        "codeName": "ARIRANG 스마트베타 LowVOL",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A195970",
+        "codeName": "ARIRANG 선진국MSCI(합성 H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A269540",
+        "codeName": "ARIRANG 미국S&P500(H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A332620",
+        "codeName": "ARIRANG 미국장기우량회사채",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A332610",
+        "codeName": "ARIRANG 미국단기우량회사채",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A213630",
+        "codeName": "ARIRANG 미국다우존스고배당주(합..",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A287180",
+        "codeName": "ARIRANG 미국나스닥기술주",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A278620",
+        "codeName": "ARIRANG 단기채권액티브",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A190160",
+        "codeName": "ARIRANG 단기유동성",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A263190",
+        "codeName": "ARIRANG 단기우량채권",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A189400",
+        "codeName": "ARIRANG 글로벌MSCI(합성 H)",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A298340",
+        "codeName": "ARIRANG 국채선물3년",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A289670",
+        "codeName": "ARIRANG 국채선물10년",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A251600",
+        "codeName": "ARIRANG 고배당주채권혼합",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A161510",
+        "codeName": "ARIRANG 고배당주",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A251590",
+        "codeName": "ARIRANG 고배당저변동50",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A295880",
+        "codeName": "ARIRANG 200퀄리티",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A253160",
+        "codeName": "ARIRANG 200선물인버스2X",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A253150",
+        "codeName": "ARIRANG 200선물레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A295840",
+        "codeName": "ARIRANG 200밸류",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A295860",
+        "codeName": "ARIRANG 200모멘텀",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A295890",
+        "codeName": "ARIRANG 200로우볼",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A295820",
+        "codeName": "ARIRANG 200동일가중",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A152100",
+        "codeName": "ARIRANG 200",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A215620",
+        "codeName": "흥국 S&P코리아로우볼",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A140950",
+        "codeName": "파워 코스피100",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A176710",
+        "codeName": "파워 중기국고채",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A275540",
+        "codeName": "파워 스마트밸류",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A192720",
+        "codeName": "파워 고배당저변동성",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A152870",
+        "codeName": "파워 200",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A211210",
+        "codeName": "마이티 코스피고배당",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A159800",
+        "codeName": "마이티 코스피100",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A292340",
+        "codeName": "마이티 200커버드콜ATM레버리지",
+        "marketName": "ETF"
+    },
+    {
+        "shortCode": "A137930",
+        "codeName": "마이다스 200커버드콜5%OTM",
+        "marketName": "ETF"
     }
 ]
