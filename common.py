@@ -53,48 +53,23 @@ def sortJsonList(jsonList,keyName="time", reverse=False):
     return sortedJsonList
 
 PROXY_LIST = [
-'203.246.112.133:3128',
-'121.165.92.44:8080',
-'195.122.185.95:3128',
-'159.69.203.169:3128',
-'139.59.143.247:3129',
-'199.247.21.76:3128',
-'46.4.199.156:3128',
-'185.22.174.69:10010',
-'94.242.59.135:1448',
-'198.211.102.155:8080',
-'144.202.25.22:8080',
-'159.65.69.157:8118',
-'23.254.226.105:8888',
-'198.143.178.87:3128',
-'208.108.120.58:8080',
-'176.235.143.71:8080',
-'167.249.181.191:3128',
-'163.172.148.169:3128',
-'51.158.98.121:8811',
-'51.158.99.51:8811',
-'51.158.119.4:8811',
-'51.158.111.242:8811',
-'162.144.250.249:8888',
-'81.163.55.241:41258',
-'51.15.53.4:3128',
-'51.38.81.24:8080',
-'111.93.246.34:3128',
-'95.141.36.112:8686',
-'62.173.145.48:3128',
-'200.41.148.2:8080',
-'181.52.237.106:31707',
-'168.228.51.197:52748',
-'95.179.198.239:8080',
-'95.179.238.28:8080',
-'148.217.94.54:3128',
-'37.26.136.181:60193',
-'212.56.218.90:61555',
-'91.134.196.197:3128',
-'94.23.93.151:3128',
+'178.128.118.157:8080',
+'118.99.95.105:8080',
+'128.199.241.229:44344',
+'128.199.252.41:44344',
+'163.172.189.32:8811',
+'88.199.21.76:80',
+'128.199.245.98:44344',
+'51.158.172.165:8811',
+'51.158.165.18:8811',
+'51.158.186.242:8811',
+'51.158.186.242:8811',
+'173.199.122.27:8080',
+'51.158.172.165:8811',
+'51.158.165.18:8811',
 ]
 
-# 2019/07/24
+# 2020/04/04
 CODE_TABLE = [
     {
         "fullCode": "KR7060310000",
@@ -106,12 +81,6 @@ CODE_TABLE = [
         "fullCode": "KR7095570008",
         "shortCode": "A095570",
         "codeName": "AJ네트웍스",
-        "marketName": "KOSPI"
-    },
-    {
-        "fullCode": "KR7068400001",
-        "shortCode": "A068400",
-        "codeName": "AJ렌터카",
         "marketName": "KOSPI"
     },
     {
@@ -187,6 +156,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR700104K010",
+        "shortCode": "A00104K",
+        "codeName": "CJ4우(전환)",
+        "marketName": "KOSPI"
+    },
+    {
         "fullCode": "KR7000120006",
         "shortCode": "A000120",
         "codeName": "CJ대한통운",
@@ -229,12 +204,6 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
-        "fullCode": "KR7037560000",
-        "shortCode": "A037560",
-        "codeName": "CJ헬로",
-        "marketName": "KOSPI"
-    },
-    {
         "fullCode": "KR7058820002",
         "shortCode": "A058820",
         "codeName": "CMG제약",
@@ -269,12 +238,6 @@ CODE_TABLE = [
         "shortCode": "A012030",
         "codeName": "DB",
         "marketName": "KOSPI"
-    },
-    {
-        "fullCode": "KR7306620006",
-        "shortCode": "A306620",
-        "codeName": "DB금융스팩6호",
-        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7322780008",
@@ -391,12 +354,6 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
-        "fullCode": "KR7032860009",
-        "shortCode": "A032860",
-        "codeName": "GMR 머티리얼즈",
-        "marketName": "KOSDAQ"
-    },
-    {
         "fullCode": "HK0000307485",
         "shortCode": "A900290",
         "codeName": "GRT",
@@ -499,27 +456,21 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
-        "fullCode": "KR7254120009",
-        "shortCode": "A254120",
-        "codeName": "IBKS제5호스팩",
+        "fullCode": "KR7335890000",
+        "shortCode": "A335890",
+        "codeName": "IBKS제11호스팩",
         "marketName": "KOSDAQ"
     },
     {
-        "fullCode": "KR7264850009",
-        "shortCode": "A264850",
-        "codeName": "IBKS제6호스팩",
+        "fullCode": "KR7335870002",
+        "shortCode": "A335870",
+        "codeName": "IBKS제12호스팩",
         "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7276920006",
         "shortCode": "A276920",
         "codeName": "IBKS제7호스팩",
-        "marketName": "KOSDAQ"
-    },
-    {
-        "fullCode": "KR7297570004",
-        "shortCode": "A297570",
-        "codeName": "IBKS제9호스팩",
         "marketName": "KOSDAQ"
     },
     {
@@ -877,6 +828,12 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
+        "fullCode": "KR7037560000",
+        "shortCode": "A037560",
+        "codeName": "LG헬로비전",
+        "marketName": "KOSPI"
+    },
+    {
         "fullCode": "KR7051910008",
         "shortCode": "A051910",
         "codeName": "LG화학",
@@ -988,6 +945,12 @@ CODE_TABLE = [
         "fullCode": "KR7005941000",
         "shortCode": "A005945",
         "codeName": "NH투자증권우",
+        "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR7338100001",
+        "shortCode": "A338100",
+        "codeName": "NH프라임리츠",
         "marketName": "KOSPI"
     },
     {
@@ -1207,15 +1170,21 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
-        "fullCode": "KR7232330001",
-        "shortCode": "A232330",
-        "codeName": "SK3호스팩",
-        "marketName": "KOSDAQ"
-    },
-    {
         "fullCode": "KR7307070003",
         "shortCode": "A307070",
         "codeName": "SK4호스팩",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7337450001",
+        "shortCode": "A337450",
+        "codeName": "SK5호스팩",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7340350008",
+        "shortCode": "A340350",
+        "codeName": "SK6호스팩",
         "marketName": "KOSDAQ"
     },
     {
@@ -1270,6 +1239,12 @@ CODE_TABLE = [
         "fullCode": "KR7210980009",
         "shortCode": "A210980",
         "codeName": "SK디앤디",
+        "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR7068400001",
+        "shortCode": "A068400",
+        "codeName": "SK렌터카",
         "marketName": "KOSPI"
     },
     {
@@ -1459,6 +1434,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7057030009",
+        "shortCode": "A057030",
+        "codeName": "YBM넷",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7037270006",
         "shortCode": "A037270",
         "codeName": "YG PLUS",
@@ -1516,6 +1497,12 @@ CODE_TABLE = [
         "fullCode": "KR7217730001",
         "shortCode": "A217730",
         "codeName": "강스템바이오텍",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7114190002",
+        "shortCode": "A114190",
+        "codeName": "강원",
         "marketName": "KOSDAQ"
     },
     {
@@ -1771,6 +1758,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7331520007",
+        "shortCode": "A331520",
+        "codeName": "교보9호스팩",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7030610000",
         "shortCode": "A030610",
         "codeName": "교보증권",
@@ -1849,6 +1842,12 @@ CODE_TABLE = [
         "marketName": "KONEX"
     },
     {
+        "fullCode": "KR7204020002",
+        "shortCode": "A204020",
+        "codeName": "그리티",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7083420000",
         "shortCode": "A083420",
         "codeName": "그린케미칼",
@@ -1858,7 +1857,7 @@ CODE_TABLE = [
         "fullCode": "KR7186230009",
         "shortCode": "A186230",
         "codeName": "그린플러스",
-        "marketName": "KONEX"
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7014530000",
@@ -1882,6 +1881,12 @@ CODE_TABLE = [
         "fullCode": "KR7019660000",
         "shortCode": "A019660",
         "codeName": "글로본",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7032860009",
+        "shortCode": "A032860",
+        "codeName": "글로스퍼랩스",
         "marketName": "KOSDAQ"
     },
     {
@@ -2001,7 +2006,7 @@ CODE_TABLE = [
     {
         "fullCode": "KR7308100007",
         "shortCode": "A308100",
-        "codeName": "까스텔바쟉",
+        "codeName": "까스텔바작",
         "marketName": "KOSDAQ"
     },
     {
@@ -2027,6 +2032,12 @@ CODE_TABLE = [
         "shortCode": "A074610",
         "codeName": "나노메딕스",
         "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR7286750005",
+        "shortCode": "A286750",
+        "codeName": "나노브릭",
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7151910007",
@@ -2091,7 +2102,7 @@ CODE_TABLE = [
     {
         "fullCode": "KR7293580007",
         "shortCode": "A293580",
-        "codeName": "나우아이비캐피탈",
+        "codeName": "나우IB",
         "marketName": "KOSDAQ"
     },
     {
@@ -2110,12 +2121,6 @@ CODE_TABLE = [
         "fullCode": "KR7036800001",
         "shortCode": "A036800",
         "codeName": "나이스정보통신",
-        "marketName": "KOSDAQ"
-    },
-    {
-        "fullCode": "KR7082660002",
-        "shortCode": "A082660",
-        "codeName": "나인컴플렉스",
         "marketName": "KOSDAQ"
     },
     {
@@ -2185,9 +2190,9 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
-        "fullCode": "KR7072770001",
-        "shortCode": "A072770",
-        "codeName": "네오디안테크놀로지",
+        "fullCode": "KR7056000003",
+        "shortCode": "A056000",
+        "codeName": "네스엠",
         "marketName": "KOSDAQ"
     },
     {
@@ -2215,6 +2220,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7311390009",
+        "shortCode": "A311390",
+        "codeName": "네오크레마",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7085910008",
         "shortCode": "A085910",
         "codeName": "네오티스",
@@ -2230,6 +2241,12 @@ CODE_TABLE = [
         "fullCode": "KR7290660000",
         "shortCode": "A290660",
         "codeName": "네오펙트",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7306620006",
+        "shortCode": "A306620",
+        "codeName": "네온테크",
         "marketName": "KOSDAQ"
     },
     {
@@ -2254,12 +2271,6 @@ CODE_TABLE = [
         "fullCode": "KR7033640004",
         "shortCode": "A033640",
         "codeName": "네패스",
-        "marketName": "KOSDAQ"
-    },
-    {
-        "fullCode": "KR7087730008",
-        "shortCode": "A087730",
-        "codeName": "네패스신소재",
         "marketName": "KOSDAQ"
     },
     {
@@ -2335,6 +2346,12 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
+        "fullCode": "KR7317860005",
+        "shortCode": "A317860",
+        "codeName": "노드메이슨",
+        "marketName": "KONEX"
+    },
+    {
         "fullCode": "KR7104620000",
         "shortCode": "A104620",
         "codeName": "노랑풍선",
@@ -2383,6 +2400,12 @@ CODE_TABLE = [
         "marketName": "KONEX"
     },
     {
+        "fullCode": "KR7278650007",
+        "shortCode": "A278650",
+        "codeName": "노터스",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7006280002",
         "shortCode": "A006280",
         "codeName": "녹십자",
@@ -2404,6 +2427,12 @@ CODE_TABLE = [
         "fullCode": "KR7142280007",
         "shortCode": "A142280",
         "codeName": "녹십자엠에스",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7234690006",
+        "shortCode": "A234690",
+        "codeName": "녹십자웰빙",
         "marketName": "KOSDAQ"
     },
     {
@@ -2767,21 +2796,21 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
-        "fullCode": "KR7262830003",
-        "shortCode": "A262830",
-        "codeName": "대신밸런스제4호스팩",
-        "marketName": "KOSDAQ"
-    },
-    {
-        "fullCode": "KR7303030001",
-        "shortCode": "A303030",
-        "codeName": "대신밸런스제5호스팩",
-        "marketName": "KOSDAQ"
-    },
-    {
         "fullCode": "KR7307750000",
         "shortCode": "A307750",
         "codeName": "대신밸런스제6호스팩",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7332290006",
+        "shortCode": "A332290",
+        "codeName": "대신밸런스제7호스팩",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7336570007",
+        "shortCode": "A336570",
+        "codeName": "대신밸런스제8호스팩",
         "marketName": "KOSDAQ"
     },
     {
@@ -2879,12 +2908,6 @@ CODE_TABLE = [
         "shortCode": "A000430",
         "codeName": "대원강업",
         "marketName": "KOSPI"
-    },
-    {
-        "fullCode": "KR7311840003",
-        "shortCode": "A311840",
-        "codeName": "대원모방",
-        "marketName": "KONEX"
     },
     {
         "fullCode": "KR7048910004",
@@ -3151,6 +3174,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7317330009",
+        "shortCode": "A317330",
+        "codeName": "덕산테코피아",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7077360006",
         "shortCode": "A077360",
         "codeName": "덕산하이메탈",
@@ -3208,12 +3237,6 @@ CODE_TABLE = [
         "fullCode": "KR7139050009",
         "shortCode": "A139050",
         "codeName": "데일리블록체인",
-        "marketName": "KOSDAQ"
-    },
-    {
-        "fullCode": "KR7017680000",
-        "shortCode": "A017680",
-        "codeName": "데코앤이",
         "marketName": "KOSDAQ"
     },
     {
@@ -3311,12 +3334,6 @@ CODE_TABLE = [
         "shortCode": "A005965",
         "codeName": "동부건설우",
         "marketName": "KOSPI"
-    },
-    {
-        "fullCode": "KR7281740001",
-        "shortCode": "A281740",
-        "codeName": "동부스팩5호",
-        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7016380008",
@@ -3436,12 +3453,6 @@ CODE_TABLE = [
         "fullCode": "KR7084670009",
         "shortCode": "A084670",
         "codeName": "동양고속",
-        "marketName": "KOSPI"
-    },
-    {
-        "fullCode": "KR7030790000",
-        "shortCode": "A030790",
-        "codeName": "동양네트웍스",
         "marketName": "KOSPI"
     },
     {
@@ -3619,15 +3630,27 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
-        "fullCode": "KR7011160009",
-        "shortCode": "A011160",
-        "codeName": "두산건설",
-        "marketName": "KOSPI"
-    },
-    {
         "fullCode": "KR7241560002",
         "shortCode": "A241560",
         "codeName": "두산밥캣",
+        "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR7336370002",
+        "shortCode": "A336370",
+        "codeName": "두산솔루스",
+        "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR733637K010",
+        "shortCode": "A33637K",
+        "codeName": "두산솔루스1우",
+        "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR733637K028",
+        "shortCode": "A33637L",
+        "codeName": "두산솔루스2우B",
         "marketName": "KOSPI"
     },
     {
@@ -3649,6 +3672,24 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
+        "fullCode": "KR7336260005",
+        "shortCode": "A336260",
+        "codeName": "두산퓨얼셀",
+        "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR733626K013",
+        "shortCode": "A33626K",
+        "codeName": "두산퓨얼셀1우",
+        "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR733626K021",
+        "shortCode": "A33626L",
+        "codeName": "두산퓨얼셀2우B",
+        "marketName": "KOSPI"
+    },
+    {
         "fullCode": "KR7016740003",
         "shortCode": "A016740",
         "codeName": "두올",
@@ -3659,12 +3700,6 @@ CODE_TABLE = [
         "shortCode": "A078590",
         "codeName": "두올산업",
         "marketName": "KOSDAQ"
-    },
-    {
-        "fullCode": "KR7270020001",
-        "shortCode": "A270020",
-        "codeName": "두원석재",
-        "marketName": "KONEX"
     },
     {
         "fullCode": "KR7073190001",
@@ -3943,6 +3978,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7317120004",
+        "shortCode": "A317120",
+        "codeName": "라닉스",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7042510008",
         "shortCode": "A042510",
         "codeName": "라온시큐어",
@@ -3953,6 +3994,18 @@ CODE_TABLE = [
         "shortCode": "A232680",
         "codeName": "라온테크",
         "marketName": "KONEX"
+    },
+    {
+        "fullCode": "KR7300120003",
+        "shortCode": "A300120",
+        "codeName": "라온피플",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7036170009",
+        "shortCode": "A036170",
+        "codeName": "라이브파이낸셜",
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7050120005",
@@ -3977,6 +4030,12 @@ CODE_TABLE = [
         "shortCode": "A285770",
         "codeName": "라이프사이언스테크놀로지",
         "marketName": "KONEX"
+    },
+    {
+        "fullCode": "KR7214260002",
+        "shortCode": "A214260",
+        "codeName": "라파스",
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7115390007",
@@ -4039,9 +4098,27 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7294140009",
+        "shortCode": "A294140",
+        "codeName": "레몬",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7228670006",
+        "shortCode": "A228670",
+        "codeName": "레이",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7228850004",
         "shortCode": "A228850",
         "codeName": "레이언스",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7281740001",
+        "shortCode": "A281740",
+        "codeName": "레이크머티리얼즈",
         "marketName": "KOSDAQ"
     },
     {
@@ -4096,6 +4173,12 @@ CODE_TABLE = [
         "fullCode": "KR7032350001",
         "shortCode": "A032350",
         "codeName": "롯데관광개발",
+        "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR7330590001",
+        "shortCode": "A330590",
+        "codeName": "롯데리츠",
         "marketName": "KOSPI"
     },
     {
@@ -4246,18 +4329,6 @@ CODE_TABLE = [
         "fullCode": "KR7302550009",
         "shortCode": "A302550",
         "codeName": "리메드",
-        "marketName": "KONEX"
-    },
-    {
-        "fullCode": "KR7131100000",
-        "shortCode": "A131100",
-        "codeName": "리켐",
-        "marketName": "KOSDAQ"
-    },
-    {
-        "fullCode": "KR7215090002",
-        "shortCode": "A215090",
-        "codeName": "리퓨어유니맥스",
         "marketName": "KOSDAQ"
     },
     {
@@ -4283,6 +4354,12 @@ CODE_TABLE = [
         "shortCode": "A027740",
         "codeName": "마니커",
         "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR7195500004",
+        "shortCode": "A195500",
+        "codeName": "마니커에프앤지",
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7305090003",
@@ -4399,6 +4476,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7235980000",
+        "shortCode": "A235980",
+        "codeName": "메드팩토",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7200580009",
         "shortCode": "A200580",
         "codeName": "메디쎄이",
@@ -4417,6 +4500,12 @@ CODE_TABLE = [
         "marketName": "KONEX"
     },
     {
+        "fullCode": "KR7014100002",
+        "shortCode": "A014100",
+        "codeName": "메디앙스",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7236340006",
         "shortCode": "A236340",
         "codeName": "메디젠휴먼케어",
@@ -4429,10 +4518,10 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
-        "fullCode": "KR7015540008",
-        "shortCode": "A015540",
-        "codeName": "메디파트너생명공학",
-        "marketName": "KOSPI"
+        "fullCode": "KR7047920004",
+        "shortCode": "A047920",
+        "codeName": "메디포럼제약",
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7078160009",
@@ -4492,6 +4581,12 @@ CODE_TABLE = [
         "fullCode": "KR7059210005",
         "shortCode": "A059210",
         "codeName": "메타바이오메드",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7327260006",
+        "shortCode": "A327260",
+        "codeName": "메탈라이프",
         "marketName": "KOSDAQ"
     },
     {
@@ -4579,6 +4674,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7012860003",
+        "shortCode": "A012860",
+        "codeName": "모베이스전자",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7250060001",
         "shortCode": "A250060",
         "codeName": "모비스",
@@ -4642,7 +4743,7 @@ CODE_TABLE = [
         "fullCode": "KR7279600001",
         "shortCode": "A279600",
         "codeName": "미디어젠",
-        "marketName": "KONEX"
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7028040004",
@@ -4687,15 +4788,15 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
-        "fullCode": "KR7265480004",
-        "shortCode": "A265480",
-        "codeName": "미래에셋대우스팩1호",
+        "fullCode": "KR7328380001",
+        "shortCode": "A328380",
+        "codeName": "미래에셋대우스팩3호",
         "marketName": "KOSDAQ"
     },
     {
-        "fullCode": "KR7310200001",
-        "shortCode": "A310200",
-        "codeName": "미래에셋대우스팩2호",
+        "fullCode": "KR7333430007",
+        "shortCode": "A333430",
+        "codeName": "미래에셋대우스팩4호",
         "marketName": "KOSDAQ"
     },
     {
@@ -5023,12 +5124,6 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
-        "fullCode": "KR7014100002",
-        "shortCode": "A014100",
-        "codeName": "보령메디앙스",
-        "marketName": "KOSDAQ"
-    },
-    {
         "fullCode": "KR7003850005",
         "shortCode": "A003850",
         "codeName": "보령제약",
@@ -5131,9 +5226,21 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7288330004",
+        "shortCode": "A288330",
+        "codeName": "브릿지바이오테라퓨틱스",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7251630000",
         "shortCode": "A251630",
         "codeName": "브이원텍",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7018290007",
+        "shortCode": "A018290",
+        "codeName": "브이티지엠피",
         "marketName": "KOSDAQ"
     },
     {
@@ -5785,6 +5892,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7329560007",
+        "shortCode": "A329560",
+        "codeName": "상상인이안제2호스팩",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7101000008",
         "shortCode": "A101000",
         "codeName": "상상인인더스트리",
@@ -5857,6 +5970,12 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
+        "fullCode": "KR7294630009",
+        "shortCode": "A294630",
+        "codeName": "서남",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7038070009",
         "shortCode": "A038070",
         "codeName": "서린바이오",
@@ -5893,12 +6012,6 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
-        "fullCode": "KR7012860003",
-        "shortCode": "A012860",
-        "codeName": "서연전자",
-        "marketName": "KOSDAQ"
-    },
-    {
         "fullCode": "KR7019770007",
         "shortCode": "A019770",
         "codeName": "서연탑메탈",
@@ -5914,6 +6027,12 @@ CODE_TABLE = [
         "fullCode": "KR7043710003",
         "shortCode": "A043710",
         "codeName": "서울리거",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7092190008",
+        "shortCode": "A092190",
+        "codeName": "서울바이오시스",
         "marketName": "KOSDAQ"
     },
     {
@@ -6139,6 +6258,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7148150006",
+        "shortCode": "A148150",
+        "codeName": "세경하이테크",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7002420008",
         "shortCode": "A002420",
         "codeName": "세기상사",
@@ -6265,12 +6390,6 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
-        "fullCode": "KR7135270007",
-        "shortCode": "A135270",
-        "codeName": "세종머티리얼즈",
-        "marketName": "KONEX"
-    },
-    {
         "fullCode": "KR7258830009",
         "shortCode": "A258830",
         "codeName": "세종메디칼",
@@ -6329,6 +6448,12 @@ CODE_TABLE = [
         "shortCode": "A252500",
         "codeName": "세화피앤씨",
         "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7308170000",
+        "shortCode": "A308170",
+        "codeName": "센트랄모텍",
+        "marketName": "KOSPI"
     },
     {
         "fullCode": "KR7051980001",
@@ -6409,10 +6534,10 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
-        "fullCode": "KR7210610002",
-        "shortCode": "A210610",
+        "fullCode": "KR7258790005",
+        "shortCode": "A258790",
         "codeName": "소프트캠프",
-        "marketName": "KONEX"
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7066910001",
@@ -6511,6 +6636,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7317770006",
+        "shortCode": "A317770",
+        "codeName": "슈프리마아이디",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7094840006",
         "shortCode": "A094840",
         "codeName": "슈프리마에이치큐",
@@ -6541,9 +6672,21 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7131100000",
+        "shortCode": "A131100",
+        "codeName": "스카이이앤엠",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7159910009",
         "shortCode": "A159910",
         "codeName": "스킨앤스킨",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7158310003",
+        "shortCode": "A158310",
+        "codeName": "스타모빌리티",
         "marketName": "KOSDAQ"
     },
     {
@@ -6562,12 +6705,6 @@ CODE_TABLE = [
         "fullCode": "KR7253450001",
         "shortCode": "A253450",
         "codeName": "스튜디오드래곤",
-        "marketName": "KOSDAQ"
-    },
-    {
-        "fullCode": "KR7008800005",
-        "shortCode": "A008800",
-        "codeName": "스튜디오썸머",
         "marketName": "KOSDAQ"
     },
     {
@@ -6727,27 +6864,21 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
-        "fullCode": "KR7056000003",
-        "shortCode": "A056000",
-        "codeName": "신스타임즈",
-        "marketName": "KOSDAQ"
-    },
-    {
         "fullCode": "KR7002800001",
         "shortCode": "A002800",
         "codeName": "신신제약",
         "marketName": "KOSDAQ"
     },
     {
-        "fullCode": "KR7307180000",
-        "shortCode": "A307180",
-        "codeName": "신영스팩4호",
-        "marketName": "KOSDAQ"
-    },
-    {
         "fullCode": "KR7323280008",
         "shortCode": "A323280",
         "codeName": "신영스팩5호",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7344050000",
+        "shortCode": "A344050",
+        "codeName": "신영스팩6호",
         "marketName": "KOSDAQ"
     },
     {
@@ -6805,6 +6936,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7226330009",
+        "shortCode": "A226330",
+        "codeName": "신테카바이오",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7019170000",
         "shortCode": "A019170",
         "codeName": "신풍제약",
@@ -6835,12 +6972,6 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
-        "fullCode": "KR7257730002",
-        "shortCode": "A257730",
-        "codeName": "신한제3호스팩",
-        "marketName": "KOSDAQ"
-    },
-    {
         "fullCode": "KR7277480000",
         "shortCode": "A277480",
         "codeName": "신한제4호스팩",
@@ -6850,6 +6981,12 @@ CODE_TABLE = [
         "fullCode": "KR7323230003",
         "shortCode": "A323230",
         "codeName": "신한제5호스팩",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7333050003",
+        "shortCode": "A333050",
+        "codeName": "신한제6호스팩",
         "marketName": "KOSDAQ"
     },
     {
@@ -6961,12 +7098,6 @@ CODE_TABLE = [
         "marketName": "KONEX"
     },
     {
-        "fullCode": "KR7122800006",
-        "shortCode": "A122800",
-        "codeName": "썬텍",
-        "marketName": "KOSDAQ"
-    },
-    {
         "fullCode": "KR7208640003",
         "shortCode": "A208640",
         "codeName": "썸에이지",
@@ -6995,6 +7126,12 @@ CODE_TABLE = [
         "shortCode": "A099320",
         "codeName": "쎄트렉아이",
         "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7015540008",
+        "shortCode": "A015540",
+        "codeName": "쎌마테라퓨틱스",
+        "marketName": "KOSPI"
     },
     {
         "fullCode": "KR7049960008",
@@ -7051,6 +7188,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7297090003",
+        "shortCode": "A297090",
+        "codeName": "씨에스베어링",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7112610001",
         "shortCode": "A112610",
         "codeName": "씨에스윈드",
@@ -7099,12 +7242,6 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
-        "fullCode": "KR7047920004",
-        "shortCode": "A047920",
-        "codeName": "씨트리",
-        "marketName": "KOSDAQ"
-    },
-    {
         "fullCode": "KR7189540008",
         "shortCode": "A189540",
         "codeName": "씨티네트웍스",
@@ -7114,12 +7251,6 @@ CODE_TABLE = [
         "fullCode": "KR7060590007",
         "shortCode": "A060590",
         "codeName": "씨티씨바이오",
-        "marketName": "KOSDAQ"
-    },
-    {
-        "fullCode": "KR7036170009",
-        "shortCode": "A036170",
-        "codeName": "씨티젠",
         "marketName": "KOSDAQ"
     },
     {
@@ -7168,6 +7299,12 @@ CODE_TABLE = [
         "fullCode": "KR7002790004",
         "shortCode": "A002790",
         "codeName": "아모레G",
+        "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR700279K010",
+        "shortCode": "A00279K",
+        "codeName": "아모레G3우(전환)",
         "marketName": "KOSPI"
     },
     {
@@ -7363,10 +7500,16 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
-        "fullCode": "KR7122050008",
-        "shortCode": "A122050",
+        "fullCode": "KR7123010001",
+        "shortCode": "A123010",
+        "codeName": "아이에이네트웍스",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7307180000",
+        "shortCode": "A307180",
         "codeName": "아이엘사이언스",
-        "marketName": "KONEX"
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7101390003",
@@ -7441,6 +7584,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7084850007",
+        "shortCode": "A084850",
+        "codeName": "아이티엠반도체",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7223220005",
         "shortCode": "A223220",
         "codeName": "아이피몬스터",
@@ -7477,6 +7626,18 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7158430009",
+        "shortCode": "A158430",
+        "codeName": "아톤",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7149300006",
+        "shortCode": "A149300",
+        "codeName": "아퓨어스",
+        "marketName": "KONEX"
+    },
+    {
         "fullCode": "KR7067160002",
         "shortCode": "A067160",
         "codeName": "아프리카TV",
@@ -7507,10 +7668,10 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
-        "fullCode": "KR7271400004",
-        "shortCode": "A271400",
+        "fullCode": "KR7297570004",
+        "shortCode": "A297570",
         "codeName": "알로이스",
-        "marketName": "KONEX"
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7001780006",
@@ -7609,6 +7770,18 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7310200001",
+        "shortCode": "A310200",
+        "codeName": "애니플러스",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7179530001",
+        "shortCode": "A179530",
+        "codeName": "애드바이오텍",
+        "marketName": "KONEX"
+    },
+    {
         "fullCode": "KR7205500002",
         "shortCode": "A205500",
         "codeName": "액션스퀘어",
@@ -7681,12 +7854,6 @@ CODE_TABLE = [
         "marketName": "KONEX"
     },
     {
-        "fullCode": "KR7041590001",
-        "shortCode": "A041590",
-        "codeName": "에너전트",
-        "marketName": "KOSDAQ"
-    },
-    {
         "fullCode": "KR7019990001",
         "shortCode": "A019990",
         "codeName": "에너토크",
@@ -7750,6 +7917,12 @@ CODE_TABLE = [
         "fullCode": "KR7073070005",
         "shortCode": "A073070",
         "codeName": "에스모",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7087730008",
+        "shortCode": "A087730",
+        "codeName": "에스모 머티리얼즈",
         "marketName": "KOSDAQ"
     },
     {
@@ -7845,7 +8018,7 @@ CODE_TABLE = [
     {
         "fullCode": "KR7160600003",
         "shortCode": "A160600",
-        "codeName": "에스엔텍",
+        "codeName": "에스엔텍비엠",
         "marketName": "KOSDAQ"
     },
     {
@@ -7895,6 +8068,12 @@ CODE_TABLE = [
         "shortCode": "A012750",
         "codeName": "에스원",
         "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR7306040007",
+        "shortCode": "A306040",
+        "codeName": "에스제이그룹",
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7080440001",
@@ -7975,6 +8154,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7317830008",
+        "shortCode": "A317830",
+        "codeName": "에스피시스템스",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7058610007",
         "shortCode": "A058610",
         "codeName": "에스피지",
@@ -8033,6 +8218,12 @@ CODE_TABLE = [
         "shortCode": "A203400",
         "codeName": "에이비온",
         "marketName": "KONEX"
+    },
+    {
+        "fullCode": "KR7195990007",
+        "shortCode": "A195990",
+        "codeName": "에이비프로바이오",
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7003800000",
@@ -8173,6 +8364,12 @@ CODE_TABLE = [
         "marketName": "KONEX"
     },
     {
+        "fullCode": "KR7036180008",
+        "shortCode": "A036180",
+        "codeName": "에이프런티어",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7109960005",
         "shortCode": "A109960",
         "codeName": "에이프로젠 H&G",
@@ -8305,6 +8502,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7317870004",
+        "shortCode": "A317870",
+        "codeName": "엔바이오니아",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7067570002",
         "shortCode": "A067570",
         "codeName": "엔브이에이치코리아",
@@ -8347,16 +8550,16 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7238170005",
+        "shortCode": "A238170",
+        "codeName": "엔에스엠",
+        "marketName": "KONEX"
+    },
+    {
         "fullCode": "KR7224760009",
         "shortCode": "A224760",
         "codeName": "엔에스컴퍼니",
         "marketName": "KONEX"
-    },
-    {
-        "fullCode": "KR7256840000",
-        "shortCode": "A256840",
-        "codeName": "엔에이치스팩11호",
-        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7273060004",
@@ -8375,6 +8578,18 @@ CODE_TABLE = [
         "shortCode": "A319400",
         "codeName": "엔에이치스팩14호",
         "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7339950008",
+        "shortCode": "A339950",
+        "codeName": "엔에이치스팩15호",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7093510006",
+        "shortCode": "A093510",
+        "codeName": "엔지브이아이",
+        "marketName": "KONEX"
     },
     {
         "fullCode": "KR7208860007",
@@ -8416,6 +8631,12 @@ CODE_TABLE = [
         "fullCode": "KR7069410009",
         "shortCode": "A069410",
         "codeName": "엔텔스",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7198080004",
+        "shortCode": "A198080",
+        "codeName": "엔피디",
         "marketName": "KOSDAQ"
     },
     {
@@ -8569,12 +8790,6 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
-        "fullCode": "KR7204020002",
-        "shortCode": "A204020",
-        "codeName": "엠코르셋",
-        "marketName": "KOSDAQ"
-    },
-    {
         "fullCode": "KR7259630002",
         "shortCode": "A259630",
         "codeName": "엠플러스",
@@ -8621,12 +8836,6 @@ CODE_TABLE = [
         "shortCode": "A009970",
         "codeName": "영원무역홀딩스",
         "marketName": "KOSPI"
-    },
-    {
-        "fullCode": "KR7036180008",
-        "shortCode": "A036180",
-        "codeName": "영인프런티어",
-        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7003520004",
@@ -8677,6 +8886,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7250930005",
+        "shortCode": "A250930",
+        "codeName": "예선테크",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7053280004",
         "shortCode": "A053280",
         "codeName": "예스24",
@@ -8722,12 +8937,6 @@ CODE_TABLE = [
         "fullCode": "KR7007310006",
         "shortCode": "A007310",
         "codeName": "오뚜기",
-        "marketName": "KOSPI"
-    },
-    {
-        "fullCode": "KR7079440004",
-        "shortCode": "A079440",
-        "codeName": "오렌지라이프",
         "marketName": "KOSPI"
     },
     {
@@ -8851,6 +9060,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7244460002",
+        "shortCode": "A244460",
+        "codeName": "올리패스",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7226950004",
         "shortCode": "A226950",
         "codeName": "올릭스",
@@ -8866,12 +9081,6 @@ CODE_TABLE = [
         "fullCode": "KR7057680001",
         "shortCode": "A057680",
         "codeName": "옴니텔",
-        "marketName": "KOSDAQ"
-    },
-    {
-        "fullCode": "KR7123010001",
-        "shortCode": "A123010",
-        "codeName": "옵토팩",
         "marketName": "KOSDAQ"
     },
     {
@@ -8896,12 +9105,6 @@ CODE_TABLE = [
         "fullCode": "KR7052770005",
         "shortCode": "A052770",
         "codeName": "와이디온라인",
-        "marketName": "KOSDAQ"
-    },
-    {
-        "fullCode": "KR7057030009",
-        "shortCode": "A057030",
-        "codeName": "와이비엠넷",
         "marketName": "KOSDAQ"
     },
     {
@@ -9085,6 +9288,12 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
+        "fullCode": "KR7103840005",
+        "shortCode": "A103840",
+        "codeName": "우양",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7046940003",
         "shortCode": "A046940",
         "codeName": "우원개발",
@@ -9142,12 +9351,6 @@ CODE_TABLE = [
         "fullCode": "KR7103130001",
         "shortCode": "A103130",
         "codeName": "웅진에너지",
-        "marketName": "KOSPI"
-    },
-    {
-        "fullCode": "KR7021240007",
-        "shortCode": "A021240",
-        "codeName": "웅진코웨이",
         "marketName": "KOSPI"
     },
     {
@@ -9247,12 +9450,6 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
-        "fullCode": "KR7114190002",
-        "shortCode": "A114190",
-        "codeName": "웰크론강원",
-        "marketName": "KOSDAQ"
-    },
-    {
         "fullCode": "KR7076080001",
         "shortCode": "A076080",
         "codeName": "웰크론한텍",
@@ -9298,7 +9495,7 @@ CODE_TABLE = [
         "fullCode": "KR7065370009",
         "shortCode": "A065370",
         "codeName": "위세아이텍",
-        "marketName": "KONEX"
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7140660002",
@@ -9371,6 +9568,12 @@ CODE_TABLE = [
         "shortCode": "A014830",
         "codeName": "유니드",
         "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR7215090002",
+        "shortCode": "A215090",
+        "codeName": "유니맥스글로벌",
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7036200004",
@@ -9511,12 +9714,6 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
-        "fullCode": "KR7252370002",
-        "shortCode": "A252370",
-        "codeName": "유쎌",
-        "marketName": "KONEX"
-    },
-    {
         "fullCode": "KR7069330009",
         "shortCode": "A069330",
         "codeName": "유아이디",
@@ -9538,6 +9735,18 @@ CODE_TABLE = [
         "fullCode": "KR7313750002",
         "shortCode": "A313750",
         "codeName": "유안타제4호스팩",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7336060009",
+        "shortCode": "A336060",
+        "codeName": "유안타제5호스팩",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7340360007",
+        "shortCode": "A340360",
+        "codeName": "유안타제6호스팩",
         "marketName": "KOSDAQ"
     },
     {
@@ -9571,6 +9780,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7337840003",
+        "shortCode": "A337840",
+        "codeName": "유엑스엔",
+        "marketName": "KONEX"
+    },
+    {
         "fullCode": "KR7072130008",
         "shortCode": "A072130",
         "codeName": "유엔젤",
@@ -9595,12 +9810,6 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
-        "fullCode": "KR7195990007",
-        "shortCode": "A195990",
-        "codeName": "유지인트",
-        "marketName": "KOSDAQ"
-    },
-    {
         "fullCode": "KR7023410004",
         "shortCode": "A023410",
         "codeName": "유진기업",
@@ -9616,6 +9825,12 @@ CODE_TABLE = [
         "fullCode": "KR7321260002",
         "shortCode": "A321260",
         "codeName": "유진스팩4호",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7331380006",
+        "shortCode": "A331380",
+        "codeName": "유진스팩5호",
         "marketName": "KOSDAQ"
     },
     {
@@ -9691,6 +9906,12 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
+        "fullCode": "KR7072770001",
+        "shortCode": "A072770",
+        "codeName": "율호",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7008250003",
         "shortCode": "A008250",
         "codeName": "이건산업",
@@ -9751,6 +9972,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7086250008",
+        "shortCode": "A086250",
+        "codeName": "이노와이즈",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7215790007",
         "shortCode": "A215790",
         "codeName": "이노인스트루먼트",
@@ -9787,9 +10014,21 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7336040001",
+        "shortCode": "A336040",
+        "codeName": "이도바이오",
+        "marketName": "KONEX"
+    },
+    {
         "fullCode": "KR7041520008",
         "shortCode": "A041520",
         "codeName": "이라이콤",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7264850009",
+        "shortCode": "A264850",
+        "codeName": "이랜시스",
         "marketName": "KOSDAQ"
     },
     {
@@ -9889,6 +10128,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7270020001",
+        "shortCode": "A270020",
+        "codeName": "이십일스토어",
+        "marketName": "KONEX"
+    },
+    {
         "fullCode": "KR7067010009",
         "shortCode": "A067010",
         "codeName": "이씨에스",
@@ -9899,6 +10144,12 @@ CODE_TABLE = [
         "shortCode": "A093230",
         "codeName": "이아이디",
         "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR7341310001",
+        "shortCode": "A341310",
+        "codeName": "이앤에치",
+        "marketName": "KONEX"
     },
     {
         "fullCode": "KR7223310004",
@@ -10153,12 +10404,6 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
-        "fullCode": "KR7158310003",
-        "shortCode": "A158310",
-        "codeName": "인터불스",
-        "marketName": "KOSDAQ"
-    },
-    {
         "fullCode": "KR7017250002",
         "shortCode": "A017250",
         "codeName": "인터엠",
@@ -10247,12 +10492,6 @@ CODE_TABLE = [
         "shortCode": "A041020",
         "codeName": "인프라웨어",
         "marketName": "KOSDAQ"
-    },
-    {
-        "fullCode": "KR7247300007",
-        "shortCode": "A247300",
-        "codeName": "인프라웨어테크놀러지",
-        "marketName": "KONEX"
     },
     {
         "fullCode": "KR7071200000",
@@ -10393,10 +10632,10 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
-        "fullCode": "KR7230400004",
-        "shortCode": "A230400",
+        "fullCode": "KR7254120009",
+        "shortCode": "A254120",
         "codeName": "자비스",
-        "marketName": "KONEX"
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7043910009",
@@ -10409,6 +10648,12 @@ CODE_TABLE = [
         "shortCode": "A234920",
         "codeName": "자이글",
         "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7317400000",
+        "shortCode": "A317400",
+        "codeName": "자이에스앤디",
+        "marketName": "KOSPI"
     },
     {
         "fullCode": "KR7033240003",
@@ -10585,6 +10830,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7204270003",
+        "shortCode": "A204270",
+        "codeName": "제이앤티씨",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7194370003",
         "shortCode": "A194370",
         "codeName": "제이에스코퍼레이션",
@@ -10600,6 +10851,12 @@ CODE_TABLE = [
         "fullCode": "KR7126880004",
         "shortCode": "A126880",
         "codeName": "제이엔케이히터",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7322510009",
+        "shortCode": "A322510",
+        "codeName": "제이엘케이인스펙션",
         "marketName": "KOSDAQ"
     },
     {
@@ -10630,13 +10887,7 @@ CODE_TABLE = [
         "fullCode": "KR7036420008",
         "shortCode": "A036420",
         "codeName": "제이콘텐트리",
-        "marketName": "KOSDAQ"
-    },
-    {
-        "fullCode": "KR7035480003",
-        "shortCode": "A035480",
-        "codeName": "제이테크놀로지",
-        "marketName": "KOSDAQ"
+        "marketName": "KOSPI"
     },
     {
         "fullCode": "KR7089790000",
@@ -10705,6 +10956,12 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
+        "fullCode": "KR7216080002",
+        "shortCode": "A216080",
+        "codeName": "제테마",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7229000005",
         "shortCode": "A229000",
         "codeName": "젠큐릭스",
@@ -10714,6 +10971,12 @@ CODE_TABLE = [
         "fullCode": "KR7082270000",
         "shortCode": "A082270",
         "codeName": "젬백스",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7041590001",
+        "shortCode": "A041590",
+        "codeName": "젬백스지오",
         "marketName": "KOSDAQ"
     },
     {
@@ -10855,6 +11118,12 @@ CODE_TABLE = [
         "marketName": "KONEX"
     },
     {
+        "fullCode": "KR7013890009",
+        "shortCode": "A013890",
+        "codeName": "지누스",
+        "marketName": "KOSPI"
+    },
+    {
         "fullCode": "KR7043610005",
         "shortCode": "A043610",
         "codeName": "지니뮤직",
@@ -10864,6 +11133,12 @@ CODE_TABLE = [
         "fullCode": "KR7263860009",
         "shortCode": "A263860",
         "codeName": "지니언스",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7303030001",
+        "shortCode": "A303030",
+        "codeName": "지니틱스",
         "marketName": "KOSDAQ"
     },
     {
@@ -10903,6 +11178,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7270520000",
+        "shortCode": "A270520",
+        "codeName": "지엔원에너지",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7065060006",
         "shortCode": "A065060",
         "codeName": "지엔코",
@@ -10919,12 +11200,6 @@ CODE_TABLE = [
         "shortCode": "A013870",
         "codeName": "지엠비코리아",
         "marketName": "KOSPI"
-    },
-    {
-        "fullCode": "KR7018290007",
-        "shortCode": "A018290",
-        "codeName": "지엠피",
-        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7071320006",
@@ -10955,12 +11230,6 @@ CODE_TABLE = [
         "shortCode": "A035000",
         "codeName": "지투알",
         "marketName": "KOSPI"
-    },
-    {
-        "fullCode": "KR7106080005",
-        "shortCode": "A106080",
-        "codeName": "지투하이소닉",
-        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7115450009",
@@ -11047,6 +11316,12 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
+        "fullCode": "KR7250030004",
+        "shortCode": "A250030",
+        "codeName": "진코스텍",
+        "marketName": "KONEX"
+    },
+    {
         "fullCode": "KR7002780005",
         "shortCode": "A002780",
         "codeName": "진흥기업",
@@ -11101,6 +11376,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7311690002",
+        "shortCode": "A311690",
+        "codeName": "천랩",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7278280003",
         "shortCode": "A278280",
         "codeName": "천보",
@@ -11115,7 +11396,7 @@ CODE_TABLE = [
     {
         "fullCode": "KR7140290008",
         "shortCode": "A140290",
-        "codeName": "청광종건",
+        "codeName": "청광건설",
         "marketName": "KONEX"
     },
     {
@@ -11191,6 +11472,12 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
+        "fullCode": "KR7317530004",
+        "shortCode": "A317530",
+        "codeName": "캐리소프트",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7071850002",
         "shortCode": "A071850",
         "codeName": "캐스텍코리아",
@@ -11245,6 +11532,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7327970000",
+        "shortCode": "A327970",
+        "codeName": "케어룸의료산업",
+        "marketName": "KONEX"
+    },
+    {
         "fullCode": "KR7214370009",
         "shortCode": "A214370",
         "codeName": "케어젠",
@@ -11275,21 +11568,21 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
-        "fullCode": "KR7250930005",
-        "shortCode": "A250930",
-        "codeName": "케이비제10호스팩",
-        "marketName": "KOSDAQ"
-    },
-    {
-        "fullCode": "KR7258790005",
-        "shortCode": "A258790",
-        "codeName": "케이비제11호스팩",
-        "marketName": "KOSDAQ"
-    },
-    {
         "fullCode": "KR7323940007",
         "shortCode": "A323940",
         "codeName": "케이비제18호스팩",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7330990003",
+        "shortCode": "A330990",
+        "codeName": "케이비제19호스팩",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7342550001",
+        "shortCode": "A342550",
+        "codeName": "케이비제20호스팩",
         "marketName": "KOSDAQ"
     },
     {
@@ -11302,6 +11595,12 @@ CODE_TABLE = [
         "fullCode": "KR7029460003",
         "shortCode": "A029460",
         "codeName": "케이씨",
+        "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR7344820006",
+        "shortCode": "A344820",
+        "codeName": "케이씨씨글라스",
         "marketName": "KOSPI"
     },
     {
@@ -11353,6 +11652,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7272110008",
+        "shortCode": "A272110",
+        "codeName": "케이엔제이",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7039420005",
         "shortCode": "A039420",
         "codeName": "케이엘넷",
@@ -11389,6 +11694,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7347140006",
+        "shortCode": "A347140",
+        "codeName": "케이프이에스제4호",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7256940008",
         "shortCode": "A256940",
         "codeName": "케이피에스",
@@ -11410,6 +11721,12 @@ CODE_TABLE = [
         "fullCode": "KR7054410006",
         "shortCode": "A054410",
         "codeName": "케이피티유",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7274090000",
+        "shortCode": "A274090",
+        "codeName": "켄코아에어로스페이스",
         "marketName": "KOSDAQ"
     },
     {
@@ -11497,6 +11814,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7290510007",
+        "shortCode": "A290510",
+        "codeName": "코리아센터",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7007811003",
         "shortCode": "A007815",
         "codeName": "코리아써우",
@@ -11513,6 +11836,12 @@ CODE_TABLE = [
         "shortCode": "A00781K",
         "codeName": "코리아써키트2우B",
         "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR7190650002",
+        "shortCode": "A190650",
+        "codeName": "코리아에셋투자증권",
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7101670008",
@@ -11581,6 +11910,12 @@ CODE_TABLE = [
         "marketName": "KONEX"
     },
     {
+        "fullCode": "KR7082660002",
+        "shortCode": "A082660",
+        "codeName": "코스나인",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7192820009",
         "shortCode": "A192820",
         "codeName": "코스맥스",
@@ -11620,6 +11955,12 @@ CODE_TABLE = [
         "fullCode": "KR7069110005",
         "shortCode": "A069110",
         "codeName": "코스온",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7204990006",
+        "shortCode": "A204990",
+        "codeName": "코썬바이오",
         "marketName": "KOSDAQ"
     },
     {
@@ -11707,6 +12048,12 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
+        "fullCode": "KR7021240007",
+        "shortCode": "A021240",
+        "codeName": "코웨이",
+        "marketName": "KOSPI"
+    },
+    {
         "fullCode": "KR7033290008",
         "shortCode": "A033290",
         "codeName": "코웰패션",
@@ -11716,6 +12063,12 @@ CODE_TABLE = [
         "fullCode": "KR7056360001",
         "shortCode": "A056360",
         "codeName": "코위버",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7282880004",
+        "shortCode": "A282880",
+        "codeName": "코윈테크",
         "marketName": "KOSDAQ"
     },
     {
@@ -11753,12 +12106,6 @@ CODE_TABLE = [
         "shortCode": "A031820",
         "codeName": "콤텍시스템",
         "marketName": "KOSPI"
-    },
-    {
-        "fullCode": "KR7225650001",
-        "shortCode": "A225650",
-        "codeName": "쿠첸",
-        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7192400000",
@@ -11800,6 +12147,12 @@ CODE_TABLE = [
         "fullCode": "KR7115180002",
         "shortCode": "A115180",
         "codeName": "큐리언트",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7043090000",
+        "shortCode": "A043090",
+        "codeName": "큐브앤컴퍼니",
         "marketName": "KOSDAQ"
     },
     {
@@ -12031,6 +12384,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7124560004",
+        "shortCode": "A124560",
+        "codeName": "태웅로직스",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7001420009",
         "shortCode": "A001420",
         "codeName": "태원물산",
@@ -12175,6 +12534,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7322180001",
+        "shortCode": "A322180",
+        "codeName": "티라유텍",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7117730002",
         "shortCode": "A117730",
         "codeName": "티로보틱스",
@@ -12229,6 +12594,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7321550006",
+        "shortCode": "A321550",
+        "codeName": "티움바이오",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7091810002",
         "shortCode": "A091810",
         "codeName": "티웨이항공",
@@ -12251,6 +12622,12 @@ CODE_TABLE = [
         "shortCode": "A104480",
         "codeName": "티케이케미칼",
         "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7030790000",
+        "shortCode": "A030790",
+        "codeName": "티탑스",
+        "marketName": "KOSPI"
     },
     {
         "fullCode": "KR7309900009",
@@ -12451,9 +12828,9 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
-        "fullCode": "KR7043090000",
-        "shortCode": "A043090",
-        "codeName": "팜스웰바이오",
+        "fullCode": "KR7318010006",
+        "shortCode": "A318010",
+        "codeName": "팜스빌",
         "marketName": "KOSDAQ"
     },
     {
@@ -12693,7 +13070,7 @@ CODE_TABLE = [
     {
         "fullCode": "KR7195440003",
         "shortCode": "A195440",
-        "codeName": "퓨전데이타",
+        "codeName": "퓨전",
         "marketName": "KOSDAQ"
     },
     {
@@ -12749,6 +13126,12 @@ CODE_TABLE = [
         "shortCode": "A222670",
         "codeName": "플럼라인생명과학",
         "marketName": "KONEX"
+    },
+    {
+        "fullCode": "KR7237820006",
+        "shortCode": "A237820",
+        "codeName": "플레이디",
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7023770001",
@@ -12859,6 +13242,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7062970009",
+        "shortCode": "A062970",
+        "codeName": "피피아이",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7087600003",
         "shortCode": "A087600",
         "codeName": "픽셀플러스",
@@ -12889,15 +13278,27 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
-        "fullCode": "KR7270520000",
-        "shortCode": "A270520",
-        "codeName": "하나금융10호스팩",
-        "marketName": "KOSDAQ"
-    },
-    {
         "fullCode": "KR7284620002",
         "shortCode": "A284620",
         "codeName": "하나금융11호스팩",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7320000003",
+        "shortCode": "A320000",
+        "codeName": "하나금융13호스팩",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7332710003",
+        "shortCode": "A332710",
+        "codeName": "하나금융14호스팩",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7341160000",
+        "shortCode": "A341160",
+        "codeName": "하나금융15호스팩",
         "marketName": "KOSDAQ"
     },
     {
@@ -13009,6 +13410,12 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
+        "fullCode": "KR7106080005",
+        "shortCode": "A106080",
+        "codeName": "하이소닉",
+        "marketName": "KOSDAQ"
+    },
+    {
         "fullCode": "KR7071090005",
         "shortCode": "A071090",
         "codeName": "하이스틸",
@@ -13018,6 +13425,12 @@ CODE_TABLE = [
         "fullCode": "KR7317240000",
         "shortCode": "A317240",
         "codeName": "하이제4호스팩",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7340120005",
+        "shortCode": "A340120",
+        "codeName": "하이제5호스팩",
         "marketName": "KOSDAQ"
     },
     {
@@ -13135,10 +13548,22 @@ CODE_TABLE = [
         "marketName": "KOSDAQ"
     },
     {
-        "fullCode": "KR7226610004",
-        "shortCode": "A226610",
-        "codeName": "한국비엔씨",
+        "fullCode": "KR7331660001",
+        "shortCode": "A331660",
+        "codeName": "한국미라클피플사",
         "marketName": "KONEX"
+    },
+    {
+        "fullCode": "KR7318000007",
+        "shortCode": "A318000",
+        "codeName": "한국바이오젠",
+        "marketName": "KOSDAQ"
+    },
+    {
+        "fullCode": "KR7256840000",
+        "shortCode": "A256840",
+        "codeName": "한국비엔씨",
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7004090007",
@@ -13228,12 +13653,6 @@ CODE_TABLE = [
         "fullCode": "KR7025770009",
         "shortCode": "A025770",
         "codeName": "한국정보통신",
-        "marketName": "KOSDAQ"
-    },
-    {
-        "fullCode": "KR7271740003",
-        "shortCode": "A271740",
-        "codeName": "한국제5호스팩",
         "marketName": "KOSDAQ"
     },
     {
@@ -13421,6 +13840,12 @@ CODE_TABLE = [
         "shortCode": "A002390",
         "codeName": "한독",
         "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR7256150004",
+        "shortCode": "A256150",
+        "codeName": "한독크린텍",
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7014790000",
@@ -13779,13 +14204,7 @@ CODE_TABLE = [
     {
         "fullCode": "KR7054920004",
         "shortCode": "A054920",
-        "codeName": "한컴시큐어",
-        "marketName": "KOSDAQ"
-    },
-    {
-        "fullCode": "KR7077280006",
-        "shortCode": "A077280",
-        "codeName": "한컴지엠디",
+        "codeName": "한컴위드",
         "marketName": "KOSDAQ"
     },
     {
@@ -13831,10 +14250,22 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
-        "fullCode": "KR7265920009",
-        "shortCode": "A265920",
-        "codeName": "한화수성스팩",
-        "marketName": "KOSDAQ"
+        "fullCode": "KR7009830001",
+        "shortCode": "A009830",
+        "codeName": "한화솔루션",
+        "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR7009831009",
+        "shortCode": "A009835",
+        "codeName": "한화솔루션우",
+        "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR7272210006",
+        "shortCode": "A272210",
+        "codeName": "한화시스템",
+        "marketName": "KOSPI"
     },
     {
         "fullCode": "KR7317320000",
@@ -13849,12 +14280,6 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
-        "fullCode": "KR7264290008",
-        "shortCode": "A264290",
-        "codeName": "한화에이스스팩3호",
-        "marketName": "KOSDAQ"
-    },
-    {
         "fullCode": "KR7279410005",
         "shortCode": "A279410",
         "codeName": "한화에이스스팩4호",
@@ -13864,18 +14289,6 @@ CODE_TABLE = [
         "fullCode": "KR7000881003",
         "shortCode": "A000885",
         "codeName": "한화우",
-        "marketName": "KOSPI"
-    },
-    {
-        "fullCode": "KR7009830001",
-        "shortCode": "A009830",
-        "codeName": "한화케미칼",
-        "marketName": "KOSPI"
-    },
-    {
-        "fullCode": "KR7009831009",
-        "shortCode": "A009835",
-        "codeName": "한화케미칼우",
         "marketName": "KOSPI"
     },
     {
@@ -13889,6 +14302,12 @@ CODE_TABLE = [
         "shortCode": "A003535",
         "codeName": "한화투자증권우",
         "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR7340440007",
+        "shortCode": "A340440",
+        "codeName": "한화플러스제1호스팩",
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7102210002",
@@ -13937,6 +14356,12 @@ CODE_TABLE = [
         "shortCode": "A143210",
         "codeName": "핸즈코퍼레이션",
         "marketName": "KOSPI"
+    },
+    {
+        "fullCode": "KR7008800005",
+        "shortCode": "A008800",
+        "codeName": "행남사",
+        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "HK0000214814",
@@ -14059,6 +14484,12 @@ CODE_TABLE = [
         "marketName": "KOSPI"
     },
     {
+        "fullCode": "KR7322000001",
+        "shortCode": "A322000",
+        "codeName": "현대에너지솔루션",
+        "marketName": "KOSPI"
+    },
+    {
         "fullCode": "KR7126560002",
         "shortCode": "A126560",
         "codeName": "현대에이치씨엔",
@@ -14153,12 +14584,6 @@ CODE_TABLE = [
         "shortCode": "A057050",
         "codeName": "현대홈쇼핑",
         "marketName": "KOSPI"
-    },
-    {
-        "fullCode": "KR7204990006",
-        "shortCode": "A204990",
-        "codeName": "현성바이탈",
-        "marketName": "KOSDAQ"
     },
     {
         "fullCode": "KR7092300003",
@@ -14260,12 +14685,6 @@ CODE_TABLE = [
         "fullCode": "KR7126640002",
         "shortCode": "A126640",
         "codeName": "화신정공",
-        "marketName": "KOSDAQ"
-    },
-    {
-        "fullCode": "KR7086250008",
-        "shortCode": "A086250",
-        "codeName": "화신테크",
         "marketName": "KOSDAQ"
     },
     {
@@ -14373,7 +14792,7 @@ CODE_TABLE = [
     {
         "fullCode": "KR7081660003",
         "shortCode": "A081660",
-        "codeName": "휠라코리아",
+        "codeName": "휠라홀딩스",
         "marketName": "KOSPI"
     },
     {
