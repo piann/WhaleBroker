@@ -15,7 +15,7 @@ class InfoCrawler(object):
      
     def __init__(self):
         self.baseUrl = ""
-        self.breakTime = 3 # do crawling with break time
+        self.breakTime = 1 # do crawling with break time
         self.headers = {}
         self.itemName = None
         self.collection = None
