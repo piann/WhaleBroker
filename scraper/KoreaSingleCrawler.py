@@ -49,6 +49,7 @@ class KoreaSingleCrawler(NaverFinanceCrawler):
         params = {"code":str(code), "page":str(pageIdx)}
         res = self.requestGetWithProxy(self.basePriceUrl, headers=self.headers, params=params, timeout=20)
         if res is None or res.ok is False:
+            logging.error("1{{'code':{0},'pageIdx':{1}}}".format(code,pageIdx))
             logging.error("Some problem in request")
             return None
         html = res.text

@@ -54,6 +54,7 @@ class KOSDAQ2Crawler(NaverFinanceCrawler):
         params = {"bizdate":"{0}{1}{2}".format(y,m,d), "page":str(pageIdx), "sosok":"02"}
         res = self.requestGetWithProxy(self.baseAmountUrl, headers=self.headers, params=params, timeout=15)
         if res is None or res.ok is False:
+            logging.error("kosdaq{{'code':{0},'pageIdx':{1}}}".format(code,pageIdx))
             logging.error("Some problem in request")
             return None
         html = res.text

@@ -66,6 +66,7 @@ class NaverDiscussionCrawler(InfoCrawler):
         params = {"code":str(code), "page":str(pageIdx)}
         res = self.requestGetWithProxy(self.baseBoardUrl, headers=self.headers, params=params, timeout=15)
         if res is None or res.ok is False:
+            logging.error("d{{'code':{0},'pageIdx':{1}}}".format(code,pageIdx))
             logging.error("Some problem in request")
             return None
 

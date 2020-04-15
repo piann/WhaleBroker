@@ -71,7 +71,11 @@ class InfoCrawler(object):
                 proxies.add(proxy)
         '''
         proxyResults = []
+        
         for proxyUrl in PROXY_LIST:
+            tempProxies = {"http" : proxyUrl, "https" : proxyUrl}#
+            proxyResults.append(tempProxies)#
+            '''
             checkUrlCount = 0
             for targetUrl in targetUrlList:
                 tempProxies = {"http" : proxyUrl, "https" : proxyUrl}
@@ -88,6 +92,8 @@ class InfoCrawler(object):
             if(checkUrlCount == 3):
                 proxyResults.append(tempProxies)
                 logging.info("Success Proxy  : {0}".format(proxyUrl))
+            '''
+            proxyResults.append(tempProxies)#
         
         logging.info("Number of Success Proxy : {0}".format(len(proxyResults)))
         self.proxyList = proxyResults
