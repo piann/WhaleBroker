@@ -7,8 +7,8 @@ import json
 
 class ShortSellCrawler(InfoCrawler):
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, dbConn=getDBConnection(), bypassProxy=False, mixNoneProxy=False):
+        super().__init__(dbConn, bypassProxy, mixNoneProxy)
         self.OTPUrl = "https://short.krx.co.kr/contents/COM/GenerateOTP.jspx?bld=SRT%2F02%2F02010100%2Fsrt02010100&name=form&_={0}"
         self.baseUrl = "https://short.krx.co.kr/contents/SRT/99/SRT99000001.jspx"
         self.collection = "DailyKoreaStock"

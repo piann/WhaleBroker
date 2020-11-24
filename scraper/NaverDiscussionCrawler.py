@@ -9,8 +9,8 @@ import random
 
 class NaverDiscussionCrawler(InfoCrawler):
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, dbConn=getDBConnection(), bypassProxy=False, mixNoneProxy=False):
+        super().__init__(dbConn, bypassProxy, mixNoneProxy)
         self.baseBoardUrl = "https://finance.naver.com/item/board.nhn"
         self.collection = "DailyHot"
 

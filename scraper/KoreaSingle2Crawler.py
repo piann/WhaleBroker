@@ -9,8 +9,8 @@ import random
 class KoreaSingle2Crawler(NaverFinanceCrawler):
 # foreigner, institute
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, dbConn=getDBConnection(), bypassProxy=False, mixNoneProxy=False):
+        super().__init__(dbConn, bypassProxy, mixNoneProxy)
         self.basePriceUrl = self.baseUrl + "/item/frgn.nhn"
         self.collection = "DailyKoreaStock"
 

@@ -13,14 +13,17 @@ from lxml.html import fromstring
 class InfoCrawler(object):
     __metaclass__ = ABCMeta
      
-    def __init__(self):
+    def __init__(self, dbConn=getDBConnection(), bypassProxy=False, mixNoneProxy=False):
         self.baseUrl = ""
         self.breakTime = 1 # do crawling with break time
         self.headers = {}
         self.itemName = None
         self.collection = None
+        self.dbConn = dbConn
+        self.bypassProxy = bypassProxy
+        self.mixNoneProxy = mixNoneProxy
+
         self.proxyList = self.getProxyList()
-        
 
     def setRandomUserAgent(self):
         userAgentList = [
@@ -57,25 +60,31 @@ class InfoCrawler(object):
     @tryCatchWrapped
     def getProxyList(self, minPerformanceTime=10):
         targetUrlList = ['https://short.krx.co.kr/main/main.jsp', 'https://www.investing.com/', 'https://finance.naver.com/']
-        
-        # deprecated
-        '''
-        listUrl = 'https://free-proxy-list.net/'
-
-        response = requests.get(listUrl)
-        parser = fromstring(response.text)
-        proxies = set()
-        for i in parser.xpath('//tbody/tr')[:10]:
-            if i.xpath('.//td[7][contains(text(),"yes")]'):
-                proxy = ":".join([i.xpath('.//td[1]/text()')[0], i.xpath('.//td[2]/text()')[0]])
-                proxies.add(proxy)
-        '''
         proxyResults = []
-        
-        for proxyUrl in PROXY_LIST:
-            tempProxies = {"http" : proxyUrl, "https" : proxyUrl}#
-            proxyResults.append(tempProxies)#
-            '''
+        successProxyStringList = []
+
+
+        noneProxy = {"http" : None, "https" : None}
+        if self.mixNoneProxy == True:
+            proxyResults.append(noneProxy)
+
+        if self.bypassProxy == True:
+            return proxyResults
+
+        # get Proxy Infos
+        candidateProxyStringList = []
+        # 1 crawling
+        crawledList = crawlProxyServerList()
+        candidateProxyStringList += crawledList
+        # 2 get from mongo db
+        if self.dbConn != None :
+            savedList = getRecentProxyListFromMongo(self.dbConn)
+            candidateProxyStringList += savedList
+
+        for proxyUrl in candidateProxyStringList:
+            #tempProxies = {"http" : proxyUrl, "https" : proxyUrl}#
+            #proxyResults.append(tempProxies)#
+            ###
             checkUrlCount = 0
             for targetUrl in targetUrlList:
                 tempProxies = {"http" : proxyUrl, "https" : proxyUrl}
@@ -90,13 +99,17 @@ class InfoCrawler(object):
                     break
 
             if(checkUrlCount == 3):
+                successProxyStringList.append(proxyUrl) 
                 proxyResults.append(tempProxies)
                 logging.info("Success Proxy  : {0}".format(proxyUrl))
-            '''
-            proxyResults.append(tempProxies)#
+
+            ###
+            #proxyResults.append(tempProxies)#
         
         logging.info("Number of Success Proxy : {0}".format(len(proxyResults)))
+        updateProxyList(self.dbConn, successProxyStringList)
         self.proxyList = proxyResults
+        logging.info(proxyResults)
         return proxyResults
 
     @abstractmethod
@@ -108,14 +121,14 @@ class InfoCrawler(object):
 
         
     @tryCatchWrapped
-    def putDataToMongo(self, dbConn, resultData):
+    def putDataToMongo(self, resultData):
         # consider resultData format and db collection
         # consider the case utilizing multiple collection    
 
         if self.collection is None:
             return None
         
-        col = dbConn.get_collection(self.collection)
+        col = self.dbConn.get_collection(self.collection)
         for code, infoDictList in resultData.items():
             for infoDict in infoDictList:
                 res = col.find_one({"_id":code,"data.time":infoDict["time"]})
@@ -133,7 +146,7 @@ class InfoCrawler(object):
 
     @tryCatchWrapped
     def requestGetWithProxy(self, *args,**kwargs):
-        retryCount = 7
+        retryCount = 15
         for idx in range(0,retryCount):
             try:
                 proxies = random.choice(self.proxyList)
@@ -149,7 +162,7 @@ class InfoCrawler(object):
 
     @tryCatchWrapped
     def requestPostWithProxy(self, *args,**kwargs):
-        retryCount = 7
+        retryCount = 15
         for idx in range(0,retryCount):
             try:
                 proxies = random.choice(self.proxyList)
@@ -167,8 +180,8 @@ class InvestingCrawler(InfoCrawler):
     # input is items of form data (ex : curr_id: 8830, smlID: 300004, header: Gold Futures Historical Data)
     # range is date to date, and no limit
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, dbConn=getDBConnection(), bypassProxy=False, mixNoneProxy=False):
+        super().__init__(dbConn, bypassProxy, mixNoneProxy)
         self.baseUrl = "https://www.investing.com/instruments/HistoricalDataAjax"
         self.headers = {
             'User-Agent' : '',
@@ -276,8 +289,8 @@ class NaverFinanceCrawler(InfoCrawler):
     # input is code (ex : SK is 034730)
     # loop by page
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, dbConn=getDBConnection(), bypassProxy=False, mixNoneProxy=False):
+        super().__init__(dbConn, bypassProxy, mixNoneProxy)
         self.baseUrl = "https://finance.naver.com"
         self.headers = {
             'User-Agent' : '',

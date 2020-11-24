@@ -10,8 +10,8 @@ import random
 class KOSDAQ2Crawler(NaverFinanceCrawler):
 # date, endPrice, startPrice, highPrice, lowPrice, amount
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, dbConn=getDBConnection(), bypassProxy=False, mixNoneProxy=False):
+        super().__init__(dbConn, bypassProxy, mixNoneProxy)
         self.baseAmountUrl = self.baseUrl + "/sise/investorDealTrendDay.nhn"
         self.collection = "DailyIndex"
         self.itemName="KOSDAQ"

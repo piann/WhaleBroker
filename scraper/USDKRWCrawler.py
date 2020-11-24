@@ -10,8 +10,8 @@ import datetime
 
 class USDKRWCrawler(InvestingCrawler):
     
-    def __init__(self):
-        super().__init__()
+    def __init__(self, dbConn=getDBConnection(), bypassProxy=False, mixNoneProxy=False):
+        super().__init__(dbConn, bypassProxy, mixNoneProxy)
         self.formData = {"curr_id": 650,
             "smlID": 106816,
             "header": "USD/KRW Historical Data",
