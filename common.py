@@ -67,19 +67,25 @@ def crawlProxyServerList():
     CHROME_DRIVER_PATH = os.getenv('CHROME_DRIVER_PATH')
     driver = webdriver.Chrome(CHROME_DRIVER_PATH)
     driver.implicitly_wait(3)
-
+    
+    
+    webProxyUrl = "https://us7.webproxy.best/"
     #generalPagesFormat = 'http://free-proxy.cz/en/proxylist/main/{}';
     httpsPagesFormat = 'http://free-proxy.cz/en/proxylist/country/all/https/speed/all/{}'
 
 
     proxyList = []
     for i in [4,1,3,2]:
-        driver.get(httpsPagesFormat.format(i))
+        driver.get(webProxyUrl)
+        driver.find_element_by_id('inputurl').clear()
+        driver.find_element_by_id('inputurl').send_keys(httpsPagesFormat.format(i))
+        driver.find_element_by_id('surfbtn').click()
+        driver.implicitly_wait(10)
         driver.find_element_by_id('clickexport').click()
         driver.implicitly_wait(1)
         element = driver.find_element_by_id('zkzk')
         proxyList += (element.text).split("\n")
-        time.sleep(10)
+        time.sleep(24)
     driver.quit()
 
     return proxyList
