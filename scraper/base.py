@@ -69,7 +69,7 @@ class InfoCrawler(object):
             proxyResults.append(noneProxy)
 
         if self.bypassProxy == True:
-            return proxyResults
+            return [noneProxy]
 
         # get Proxy Infos
         candidateProxyStringList = []
